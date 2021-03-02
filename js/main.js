@@ -35,7 +35,7 @@ $(document).ready(function(){
     console.log(h2);
     if (h2>=5 && h2<6) _ab2.attr({src:'video/일출.mp4'});
     if (h2>=6 && h2<18) _ab2.attr({src:'video/Clouds - 1154.mp4'});
-    if (h2>=18 && h2<=19) _ab2.attr({src:'video/일몰 - 8451.mp4'});
+    if (h2>=18 && h2<=19) _ab2.attr({src:'video/일몰.mp4'});
     if (h2> 19 && h2<5) _ab2.attr({src:'video/Full Moon - 2144.mp4'});
  //버튼 클릭시 사진 변경이벤트
  $('.tb1').on('click',function(){

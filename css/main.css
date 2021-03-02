@@ -41,7 +41,8 @@
         transition: all 0.5s; }
   .swiper-container .swiper-scrollbar {
     height: 2.5px;
-    bottom: 30px; }
+    bottom: 30px;
+    border-radius: none; }
   .swiper-container .swiper-scrollbar-drag {
     width: 90%;
     height: 10px;
