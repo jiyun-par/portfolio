@@ -138,7 +138,8 @@
           margin-bottom: 5px;
           width: 55px;
           height: 25px;
-          z-index: 500; }
+          z-index: 500;
+          text-align: left; }
         #cnt1 #about_box .ab2 #time .tb:hover {
           text-decoration: underline; }
     #cnt1 #about_box .ab3 .txtcircle {

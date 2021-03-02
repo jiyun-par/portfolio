@@ -126,4 +126,8 @@ body {
 .boxshadow {
   box-shadow: 5px 5px 5px rgba(46, 46, 46, 0.603); }
 
+.btndeco {
+  color: #243f88;
+  font-weight: 500; }
+
 /*# sourceMappingURL=common.css.map */

@@ -37,15 +37,25 @@ $(document).ready(function(){
     if (h2> 19 && h2<5) _ab2.attr({src:'video/Full Moon - 2144.mp4'});
  //버튼 클릭시 사진 변경이벤트
  $('.tb1').on('click',function(){
-    attr({src:'video/Sunrise - 7127.mp4'});
+    _ab2.attr({src:'video/Sunrise - 7127.mp4'});
+    $(this).addClass('btndeco').siblings().removeClass('btndeco');
  });
  $('.tb2').on('click',function(){
     _ab2.attr({src:'video/Clouds - 1154.mp4'});
+    $(this).addClass('btndeco').siblings().removeClass('btndeco');
+
  });
  $('.tb3').on('click',function(){
     _ab2.attr({src:'video/Sunset - 8451.mp4'});
+    $(this).addClass('btndeco').siblings().removeClass('btndeco');
+
  });
  $('.tb4').on('click',function(){
     _ab2.attr({src:'video/Full Moon - 2144.mp4'});
+    $(this).addClass('btndeco').siblings().removeClass('btndeco');
+
  });
+ $('.tb5').on('click',function(){
+ window.location.reload();
+});
 });         

@@ -86,7 +86,7 @@
           #time{
            font-size: 14px; text-align: left;  padding-left:10px; width:100px; height:95px;
             position:absolute; top:-5px; right:-100px; 
-            .tb{margin-bottom: 5px; width: 55px; height:25px; z-index: 500;}
+            .tb{margin-bottom: 5px; width: 55px; height:25px; z-index: 500; text-align: left;}
             .tb:hover{ text-decoration: underline;}
           }
         }
@@ -104,7 +104,6 @@
                100%{transform:rotate(360deg);}
              }
             }
-  
         }
         .ab4{
           p{
@@ -118,7 +117,6 @@
 
       }
       div:nth-child(even){
-        
       }
       }
   }
