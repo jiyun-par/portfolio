@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title> 스와이퍼 </title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <!-- 배경 라인 -->
+  <div id="lineTop" class="line"></div>
+  <div id="lineBottom" class="line"></div>
+  <div id="lineleft" class="line2"></div>
+  <div id="lineright" class="line2"></div>
+  <div class="swiper-container">
+        <!--header -->
+        <div class="swiper-pagination">
+        </div>
+      <h1 id="logo"><img src="images/메인로고2.svg"></h1>
+      <div class="swiper-wrapper">
+        <!-- Content -->
+        <section class="swiper-slide" id="cnt1">
+          <h2 class="blind">Main Page</h2>
+          <div class="name">
+            <p>A&nbsp;&nbsp;B&nbsp;&nbsp;O&nbsp;&nbsp;U&nbsp;&nbsp;T</p>
+          </div>
+          <div id="about_box">
+            <div class="ab1 boxshadow">마우스거리에 따라 움직이기</div>
+            <div class="ab2 boxshadow">
+              <img src="" alt="" class="sky">
+              <p class="clock"></p>
+              <div id="time">
+                <button type="button" class="tb tb1">05:00am</button>
+                <button type="button" class="tb tb2">08:00am</button>
+                <button type="button" class="tb tb3">18:00pm</button>
+                <button type="button" class="tb tb4">22:00pm</button>
+              </div>
+            </div>
+            <div class="ab3">
+          </div>
+            <div class="ab4">
+              <p class="about">누구나 쉽고 편하게 볼 수 있는 웹 페이지를 만들고 디자이너와 개발자간의 소통을 중요시 하는 웹퍼블리셔 입니다.</p>
+            </div>
+            <div class="ab5">
+            </div>
+            <div class="ab6">
+              <div class="txtcircle">
+                <img src="images/CIRCLE1_6.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="swiper-slide" id="cnt2">
+          <div class="name">
+            <p>S&nbsp;&nbsp;K&nbsp;&nbsp;I&nbsp;&nbsp;L&nbsp;&nbsp;L</p>
+          </div>
+        </section>
+        <section class="swiper-slide" id="cnt3">
+          <div class="name">
+            <p>P&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;T&nbsp;&nbsp;F&nbsp;&nbsp;O&nbsp;&nbsp;L&nbsp;&nbsp;I&nbsp;&nbsp;O</p>
+          </div>
+        </section>
+        <section class="swiper-slide" id="cnt4">
+          <div class="name">
+            <p>C&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;T&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;T</p>
+          </div>
+        </section>
+     </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev pnbtn"></div>
+      <div class="swiper-button-next pnbtn"></div>
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar el"></div>
+    </div>
+</div>
+</body>
+</html>

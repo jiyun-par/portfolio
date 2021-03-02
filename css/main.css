@@ -1,0 +1,172 @@
+#wrap {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+
+.swiper-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%; }
+  .swiper-container .pnbtn {
+    display: none; }
+  .swiper-container .swiper-wrapper .swiper-slide {
+    background-color: transparent; }
+  .swiper-container .swiper-pagination-bullets {
+    position: fixed;
+    bottom: auto;
+    top: -5px;
+    left: auto;
+    right: 250px;
+    width: 600px;
+    height: auto;
+    margin-top: 50px; }
+    .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
+      width: 120px;
+      height: auto;
+      border-radius: 0;
+      background: none;
+      font-family: "Roboto";
+      font-weight: 100;
+      font-size: 20px; }
+      .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3) {
+        margin-left: 20px; }
+      .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4) {
+        margin-left: 35px; }
+      .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet a {
+        display: block;
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        transition: all 0.5s; }
+  .swiper-container .swiper-scrollbar {
+    height: 2.5px;
+    bottom: 30px; }
+  .swiper-container .swiper-scrollbar-drag {
+    width: 90%;
+    height: 10px;
+    top: -4px;
+    cursor: pointer; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #52525231;
+  position: fixed; }
+
+#lineTop {
+  top: 12%;
+  left: 0; }
+
+#lineBottom {
+  bottom: 20%;
+  left: 0; }
+
+.line2 {
+  width: 1px;
+  height: 100%;
+  background: #52525231;
+  position: fixed; }
+
+#lineleft {
+  left: 15%;
+  top: 0; }
+
+#lineright {
+  right: 15%;
+  top: 12%; }
+
+#cnt1 {
+  position: relative; }
+  #cnt1 #about_box {
+    width: 1300px;
+    height: 610px;
+    position: fixed;
+    top: 125px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px; }
+    #cnt1 #about_box div {
+      position: relative; }
+    #cnt1 #about_box .ab1 {
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      background-size: cover !important;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      background: url(../images/web_main.jpg) no-repeat center; }
+    #cnt1 #about_box .ab2 {
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      background-size: cover !important;
+      grid-row-start: 2;
+      grid-row-end: 4; }
+      #cnt1 #about_box .ab2 .clock {
+        position: absolute;
+        top: -25px;
+        left: 0;
+        font-size: 16px; }
+      #cnt1 #about_box .ab2 #time {
+        font-size: 14px;
+        text-align: left;
+        padding-left: 10px;
+        width: 100px;
+        height: 95px;
+        position: absolute;
+        top: -5px;
+        right: -100px; }
+        #cnt1 #about_box .ab2 #time .tb {
+          margin-bottom: 5px;
+          width: 55px;
+          height: 25px;
+          z-index: 500; }
+        #cnt1 #about_box .ab2 #time .tb:hover {
+          text-decoration: underline; }
+    #cnt1 #about_box .ab4 p {
+      text-align: left;
+      display: inline-block;
+      width: 200px;
+      line-height: 2;
+      position: absolute;
+      top: -6px;
+      left: 60px;
+      font-weight: 400; }
+    #cnt1 #about_box .ab6 .txtcircle {
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+      z-index: 100;
+      animation: circle2 0.5s linear 1.5s 1 forwards; }
+      #cnt1 #about_box .ab6 .txtcircle img {
+        width: 100%;
+        animation: circle 15s linear infinite; }
+@keyframes circle {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=main.css.map */
