@@ -65,7 +65,8 @@
       #about_box{
         width:1300px; height:610px;  position:fixed; top:125px;
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 330px 640px 200px;
+        grid-template-rows: 200px;
         grid-gap: 50px;
         div{position:relative;}
         .ab1{
@@ -77,9 +78,10 @@
         .ab2{
           @include bgsize(cover);
           grid-row-start:2;
-          grid-row-end:4;
+          grid-row-end:4;            
+          //  width:640px; height:360px;
           .clock{
-            position:absolute; top:-25px; left:0; font-size: 16px;
+            position:absolute; top:-250px; left:0; font-size: 30px;
           }
           #time{
            font-size: 14px; text-align: left;  padding-left:10px; width:100px; height:95px;
@@ -89,6 +91,20 @@
           }
         }
         .ab3{
+          .txtcircle{
+            @include translateX-50;
+            position:absolute; bottom:0px; right:0; z-index: 100;
+            animation:circle2 0.5s linear 1.5s 1 forwards;
+             img{
+               width:100%;
+               animation:circle 15s linear infinite;
+             }
+             @keyframes circle {
+               0%{transform:rotate(0deg);}
+               100%{transform:rotate(360deg);}
+             }
+            }
+  
         }
         .ab4{
           p{
@@ -98,21 +114,6 @@
             position:absolute; top:-6px; left:60px; font-weight: 400;
           }
         }
-       .ab6{
-        .txtcircle{
-          @include translateX-50;
-          position:absolute; bottom:0px; right:0; z-index: 100;
-          animation:circle2 0.5s linear 1.5s 1 forwards;
-           img{
-             width:100%;
-             animation:circle 15s linear infinite;
-           }
-           @keyframes circle {
-             0%{transform:rotate(0deg);}
-             100%{transform:rotate(360deg);}
-           }
-          }
-       }
       div:nth-child(odd){
 
       }

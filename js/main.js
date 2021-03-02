@@ -27,13 +27,25 @@ $(document).ready(function(){
     _nav.eq(3).append('<a href="">'+'CONTACT'+'</a>');
      clock();
     var time = setInterval(clock, 1000);
-    var _ab2=$('.ab2');
+    var _ab2=$('.ab2 > video');
     var timer2 =new Date();
     var h2 = timer2.getHours();
     console.log(h2);
-    if (h2>=5 && h2<6) _ab2.addClass('bg1');
-    if (h2>=6 && h2<18) _ab2.addClass('bg2');
-    if (h2>=18 && h2<=19) _ab2.addClass('bg3');
-    if (h2> 19 && h2<5) _ab2.addClass('bg4');
+    if (h2>=5 && h2<6) _ab2.attr({src:'video/Sunrise - 7127.mp4'});
+    if (h2>=6 && h2<18) _ab2.attr({src:'video/Clouds - 1154.mp4'});
+    if (h2>=18 && h2<=19) _ab2.attr({src:'video/Sunset - 8451.mp4'});
+    if (h2> 19 && h2<5) _ab2.attr({src:'video/Full Moon - 2144.mp4'});
  //버튼 클릭시 사진 변경이벤트
+ $('.tb1').on('click',function(){
+    attr({src:'video/Sunrise - 7127.mp4'});
+ });
+ $('.tb2').on('click',function(){
+    _ab2.attr({src:'video/Clouds - 1154.mp4'});
+ });
+ $('.tb3').on('click',function(){
+    _ab2.attr({src:'video/Sunset - 8451.mp4'});
+ });
+ $('.tb4').on('click',function(){
+    _ab2.attr({src:'video/Full Moon - 2144.mp4'});
+ });
 });         

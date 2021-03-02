@@ -102,7 +102,8 @@
     position: fixed;
     top: 125px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 330px 640px 200px;
+    grid-template-rows: 200px;
     grid-gap: 50px; }
     #cnt1 #about_box div {
       position: relative; }
@@ -121,9 +122,9 @@
       grid-row-end: 4; }
       #cnt1 #about_box .ab2 .clock {
         position: absolute;
-        top: -25px;
+        top: -250px;
         left: 0;
-        font-size: 16px; }
+        font-size: 30px; }
       #cnt1 #about_box .ab2 #time {
         font-size: 14px;
         text-align: left;
@@ -140,16 +141,7 @@
           z-index: 500; }
         #cnt1 #about_box .ab2 #time .tb:hover {
           text-decoration: underline; }
-    #cnt1 #about_box .ab4 p {
-      text-align: left;
-      display: inline-block;
-      width: 200px;
-      line-height: 2;
-      position: absolute;
-      top: -6px;
-      left: 60px;
-      font-weight: 400; }
-    #cnt1 #about_box .ab6 .txtcircle {
+    #cnt1 #about_box .ab3 .txtcircle {
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
       -o-transform: translateX(-50%);
@@ -160,7 +152,7 @@
       right: 0;
       z-index: 100;
       animation: circle2 0.5s linear 1.5s 1 forwards; }
-      #cnt1 #about_box .ab6 .txtcircle img {
+      #cnt1 #about_box .ab3 .txtcircle img {
         width: 100%;
         animation: circle 15s linear infinite; }
 @keyframes circle {
@@ -168,5 +160,14 @@
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+    #cnt1 #about_box .ab4 p {
+      text-align: left;
+      display: inline-block;
+      width: 200px;
+      line-height: 2;
+      position: absolute;
+      top: -6px;
+      left: 60px;
+      font-weight: 400; }
 
 /*# sourceMappingURL=main.css.map */
