@@ -126,7 +126,8 @@
         position: absolute;
         top: -250px;
         left: 0;
-        font-size: 30px; }
+        font-size: 30px;
+        font-family: "Roboto"; }
       #cnt1 #about_box .ab2 #time {
         font-size: 14px;
         text-align: left;

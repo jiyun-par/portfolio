@@ -7,15 +7,16 @@ var day =timer.getDay();
 var  h = timer.getHours();
 var m = timer.getMinutes();
 var s = timer.getSeconds();
-var array =['일','월','화','수','목','금','토']
-if (mm < 10) mm= '0' + mm;
+var arrayDay =['SUN','MON','TUE','WED','THU','FRI','SAT']
+var arrayMonth =['JAN','FAB','MAR','APR','MAY','JUN','JUL','AUG','JUL','SEP','OCT','NOV','DEC']
+// if (mm < 10) mm= '0' + mm;
 if (dd < 10) dd= '0' + dd;
 if (h < 10) h= '0' + h;
 if (m < 10) m= '0' + m;
 if (s < 10) s= '0' + s;
 console.log(mm, dd, day, h , m, s); 
-// var current = mm + '월' +' ' +dd+'일' + ' '+array[day] +'요일'+' '+h+':'+m+':'+s;
-var current =h+':'+m+':'+s;
+var current = arrayMonth[mm-1]  +' ' +dd + ' '+arrayDay[day] +' '+h+':'+m+':'+s;
+// var current =h+':'+m+':'+s;
 console.log(current);
 document.querySelector('.clock').innerHTML=current;
 }
