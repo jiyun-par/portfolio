@@ -14,7 +14,8 @@ if (h < 10) h= '0' + h;
 if (m < 10) m= '0' + m;
 if (s < 10) s= '0' + s;
 console.log(mm, dd, day, h , m, s); 
-var current = mm + '월' +' ' +dd+'일' + ' '+array[day] +'요일'+' '+h+':'+m+':'+s;
+// var current = mm + '월' +' ' +dd+'일' + ' '+array[day] +'요일'+' '+h+':'+m+':'+s;
+var current =h+':'+m+':'+s;
 console.log(current);
 document.querySelector('.clock').innerHTML=current;
 }
