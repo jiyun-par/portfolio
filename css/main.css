@@ -1,5 +1,5 @@
 #wrap {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: relative; }
 
@@ -10,7 +10,9 @@
   .swiper-container .pnbtn {
     display: none; }
   .swiper-container .swiper-wrapper .swiper-slide {
-    background-color: transparent; }
+    background-color: transparent;
+    width: 100%;
+    position: relative; }
   .swiper-container .swiper-pagination-bullets {
     position: fixed;
     bottom: auto;
@@ -92,121 +94,91 @@
   right: 15%;
   top: 12%; }
 
-#cnt1 {
+#cnt1 #about_box .ab {
   position: relative; }
-  #cnt1 #about_box {
-    width: 1300px;
-    height: 610px;
+#cnt1 #about_box .ab1 {
+  grid-row: 1/4;
+  overflow: hidden;
+  width: 400px;
+  height: 600px; }
+  #cnt1 #about_box .ab1 img {
+    width: 1080px;
+    height: auto;
+    max-width: none;
     position: absolute;
-    top: 125px;
-    display: grid;
-    grid-template-columns: 330px 640px 200px;
-    grid-template-rows: 200px;
-    grid-gap: 50px; }
-    #cnt1 #about_box div {
-      position: relative; }
-    #cnt1 #about_box .ab1 {
-      grid-row-start: 1;
-      grid-row-end: 4;
-      overflow: hidden;
-      width: 330px;
-      height: 611px; }
-      #cnt1 #about_box .ab1 img {
-        width: 1080px;
-        height: auto;
-        max-width: none;
-        position: absolute;
-        left: -50%;
-        top: -10%; }
-      #cnt1 #about_box .ab1 .black {
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.349);
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: all 0.5s; }
-      #cnt1 #about_box .ab1 p {
-        font-family: "Roboto";
-        font-weight: 500;
-        font-size: 50px;
-        position: absolute;
-        top: 245px;
-        right: 10px;
-        color: #f3f3f3;
-        cursor: default;
-        transition: all 0.5s; }
-      #cnt1 #about_box .ab1:hover .black {
-        background: rgba(0, 0, 0, 0); }
-      #cnt1 #about_box .ab1:hover p {
-        color: #000; }
-    #cnt1 #about_box .ab2 {
-      -webkit-background-size: cover !important;
-      -moz-background-size: cover !important;
-      background-size: cover !important;
-      grid-row-start: 2;
-      grid-row-end: 4; }
-      #cnt1 #about_box .ab2 video {
-        height: 100%; }
-      #cnt1 #about_box .ab2 .clock {
-        position: absolute;
-        top: -250px;
-        left: 0;
-        font-size: 30px;
-        font-family: "Roboto"; }
-      #cnt1 #about_box .ab2 #time {
-        font-size: 14px;
-        text-align: left;
-        padding-left: 10px;
-        width: 100px;
-        height: 95px;
-        position: absolute;
-        top: -5px;
-        right: -100px; }
-        #cnt1 #about_box .ab2 #time .tb {
-          margin-bottom: 5px;
-          width: 55px;
-          height: 25px;
-          z-index: 500;
-          text-align: left; }
-        #cnt1 #about_box .ab2 #time .tb:hover {
-          text-decoration: underline; }
-    #cnt1 #about_box .ab3 .txtcircle {
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -o-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-      position: absolute;
-      bottom: 0px;
-      right: 0;
-      z-index: 100;
-      animation: circle2 0.5s linear 1.5s 1 forwards; }
-      #cnt1 #about_box .ab3 .txtcircle img {
-        width: 100%;
-        animation: circle 15s linear infinite; }
-@keyframes circle {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
-    #cnt1 #about_box .ab4 p {
-      text-align: left;
-      display: inline-block;
-      width: 200px;
-      line-height: 2;
-      position: absolute;
-      top: -6px;
-      left: 60px;
-      font-weight: 400; }
-  #cnt1 .arrow {
+    left: -50%;
+    top: -10%; }
+  #cnt1 #about_box .ab1 .black {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.349);
     position: absolute;
-    bottom: 80px;
-    right: 120px;
-    width: 153px;
-    height: 69px;
-    opacity: 0.7;
-    animation: arrow 1.5s linear infinite; }
+    top: 0;
+    left: 0;
+    transition: all 0.5s; }
+  #cnt1 #about_box .ab1 p {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 50px;
+    position: absolute;
+    top: 245px;
+    right: 10px;
+    color: #f3f3f3;
+    cursor: default;
+    transition: all 0.5s; }
+  #cnt1 #about_box .ab1:hover .black {
+    background: rgba(0, 0, 0, 0); }
+  #cnt1 #about_box .ab1:hover p {
+    color: #000; }
+#cnt1 #about_box .ab2 {
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  background-size: cover !important;
+  grid-row: 2/4;
+  width: 498px;
+  height: 280px; }
+  #cnt1 #about_box .ab2 video {
+    height: 100%; }
+  #cnt1 #about_box .ab2 .clock {
+    position: absolute;
+    top: -325px;
+    left: 0;
+    font-size: 30px;
+    font-family: "Roboto"; }
+  #cnt1 #about_box .ab2 #time {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10px;
+    width: 100px;
+    height: 95px;
+    position: absolute;
+    top: -5px;
+    right: -100px; }
+    #cnt1 #about_box .ab2 #time .tb {
+      margin-bottom: 5px;
+      width: 55px;
+      height: 25px;
+      z-index: 500;
+      text-align: left; }
+    #cnt1 #about_box .ab2 #time .tb:hover {
+      text-decoration: underline; }
+#cnt1 #about_box .ab4 p {
+  text-align: justify;
+  display: inline-block;
+  width: 200px;
+  line-height: 2;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  font-weight: 400; }
+#cnt1 .arrow {
+  position: absolute;
+  bottom: 220px;
+  right: 120px;
+  width: 153px;
+  height: 69px;
+  opacity: 0.7;
+  animation: arrow 1.5s linear infinite; }
 @keyframes arrow {
   0% {
     right: 120px; }
@@ -215,64 +187,25 @@
     opacity: 0.5; }
   100% {
     right: 120px; } }
-@media screen and (max-width: 1440px) {
-  #cnt1 #about_box {
-    width: vw-calc1440(1300);
-    height: vw-calc1440(610);
-    top: vw-calc1440(125);
-    grid-template-columns: vw-calc1440(330) vw-calc1440(640) vw-calc1440(200);
-    grid-template-rows: vw-calc1440(200);
-    grid-gap: vw-calc1440(50); }
-    #cnt1 #about_box .ab1 {
-      width: vw-calc1440(330);
-      height: vw-calc1440(611); }
-      #cnt1 #about_box .ab1 img {
-        width: vw-calc1440(1080); }
-      #cnt1 #about_box .ab1 p {
-        font-size: vw-calc1440(50);
-        top: vw-calc1440(245);
-        right: vw-calc1440(10); }
-    #cnt1 #about_box .ab2 .clock {
-      position: absolute;
-      top: vw-calc1440(-250);
-      font-size: vw-calc1440(30); }
-    #cnt1 #about_box .ab2 #time {
-      font-size: vw-calc1440(14);
-      padding-left: vw-calc1440(10);
-      width: vw-calc1440(100);
-      height: vw-calc1440(95);
-      position: absolute;
-      top: vw-calc1440(-5);
-      right: vw-calc1440(-100); }
-      #cnt1 #about_box .ab2 #time .tb {
-        margin-bottom: vw-calc1440(5);
-        width: vw-calc1440(55);
-        height: vw-calc1440(25); }
-    #cnt1 #about_box .ab3 .txtcircle {
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -o-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%); }
-      #cnt1 #about_box .ab3 .txtcircle img {
-        width: 100%;
-        animation: circle 15s linear infinite; }
-    #cnt1 #about_box .ab4 p {
-      width: vw-calc1440(200);
-      top: vw-calc1440(-6);
-      left: vw-calc1440(60); }
-  #cnt1 .arrow {
-    bottom: vw-calc1440(80);
-    right: vw-calc1440(120);
-    width: vw-calc1440(153);
-    height: vw-calc1440(69);
-    animation: arrow 1.5s linear infinite; }
-  @keyframes arrow {
-    0% {
-      right: vw-calc1440(120); }
-    50% {
-      right: vw-calc1440(100); }
-    100% {
-      right: vw-calc1440(120); } } }
+#cnt2 #skill_box > div:nth-child(odd) {
+  background: blue; }
+#cnt2 #skill_box > div:nth-child(even) {
+  background: red; }
+#cnt2 #skill_box .sb {
+  position: relative; }
+
+#cnt3 #portfolio_box > div:nth-child(odd) {
+  background: blue; }
+#cnt3 #portfolio_box > div:nth-child(even) {
+  background: red; }
+#cnt3 #portfolio_box .pb {
+  position: relative; }
+
+#cnt4 #contact_box > div:nth-child(odd) {
+  background: blue; }
+#cnt4 #contact_box > div:nth-child(even) {
+  background: red; }
+#cnt4 #contact_box .cb {
+  position: relative; }
 
 /*# sourceMappingURL=main.css.map */

@@ -49,3 +49,7 @@
     object-fit: $value;
 
 }
+@mixin grid($value){
+    -ms-display: grid;
+    display: grid;
+}
