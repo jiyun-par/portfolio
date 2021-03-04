@@ -44,3 +44,8 @@
     -moz-border-radius: $value;
     border-radius: $value;
 }
+@mixin object($value){
+    -o-object-fit: $value;
+    object-fit: $value;
+
+}

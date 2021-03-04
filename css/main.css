@@ -22,31 +22,28 @@
     margin-top: 50px; }
     .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
       width: 120px;
-      height: auto;
+      height: 25px;
+      line-height: 20px;
+      padding-top: 2px;
       border-radius: 0;
       background: none;
       font-family: "Roboto";
-      font-weight: 100;
+      font-weight: 400;
       font-size: 20px; }
       .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3) {
         margin-left: 20px; }
       .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4) {
         margin-left: 35px; }
-      .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet a {
-        display: block;
-        font-family: "Roboto";
-        font-weight: 400;
-        font-size: 20px;
-        text-align: center;
-        transition: all 0.5s; }
   .swiper-container .swiper-scrollbar {
     height: 2.5px;
     bottom: 30px;
-    border-radius: none; }
+    background: #575757; }
   .swiper-container .swiper-scrollbar-drag {
     width: 90%;
-    height: 10px;
-    top: -4px;
+    height: 8px;
+    top: 0px;
+    border-radius: 0px;
+    background: #2b2b2b;
     cursor: pointer; }
 
 .swiper-slide {
@@ -100,7 +97,7 @@
   #cnt1 #about_box {
     width: 1300px;
     height: 610px;
-    position: fixed;
+    position: absolute;
     top: 125px;
     display: grid;
     grid-template-columns: 330px 640px 200px;
@@ -109,12 +106,40 @@
     #cnt1 #about_box div {
       position: relative; }
     #cnt1 #about_box .ab1 {
-      -webkit-background-size: cover !important;
-      -moz-background-size: cover !important;
-      background-size: cover !important;
       grid-row-start: 1;
       grid-row-end: 4;
-      background: url(../images/web_main.jpg) no-repeat center; }
+      overflow: hidden;
+      width: 330px;
+      height: 611px; }
+      #cnt1 #about_box .ab1 img {
+        width: 1080px;
+        height: auto;
+        max-width: none;
+        position: absolute;
+        left: -50%;
+        top: -10%; }
+      #cnt1 #about_box .ab1 .black {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.349);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.5s; }
+      #cnt1 #about_box .ab1 p {
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 50px;
+        position: absolute;
+        top: 245px;
+        right: 10px;
+        color: #f3f3f3;
+        cursor: default;
+        transition: all 0.5s; }
+      #cnt1 #about_box .ab1:hover .black {
+        background: rgba(0, 0, 0, 0); }
+      #cnt1 #about_box .ab1:hover p {
+        color: #000; }
     #cnt1 #about_box .ab2 {
       -webkit-background-size: cover !important;
       -moz-background-size: cover !important;
@@ -174,5 +199,80 @@
       top: -6px;
       left: 60px;
       font-weight: 400; }
+  #cnt1 .arrow {
+    position: absolute;
+    bottom: 80px;
+    right: 120px;
+    width: 153px;
+    height: 69px;
+    opacity: 0.7;
+    animation: arrow 1.5s linear infinite; }
+@keyframes arrow {
+  0% {
+    right: 120px; }
+  50% {
+    right: 100px;
+    opacity: 0.5; }
+  100% {
+    right: 120px; } }
+@media screen and (max-width: 1440px) {
+  #cnt1 #about_box {
+    width: vw-calc1440(1300);
+    height: vw-calc1440(610);
+    top: vw-calc1440(125);
+    grid-template-columns: vw-calc1440(330) vw-calc1440(640) vw-calc1440(200);
+    grid-template-rows: vw-calc1440(200);
+    grid-gap: vw-calc1440(50); }
+    #cnt1 #about_box .ab1 {
+      width: vw-calc1440(330);
+      height: vw-calc1440(611); }
+      #cnt1 #about_box .ab1 img {
+        width: vw-calc1440(1080); }
+      #cnt1 #about_box .ab1 p {
+        font-size: vw-calc1440(50);
+        top: vw-calc1440(245);
+        right: vw-calc1440(10); }
+    #cnt1 #about_box .ab2 .clock {
+      position: absolute;
+      top: vw-calc1440(-250);
+      font-size: vw-calc1440(30); }
+    #cnt1 #about_box .ab2 #time {
+      font-size: vw-calc1440(14);
+      padding-left: vw-calc1440(10);
+      width: vw-calc1440(100);
+      height: vw-calc1440(95);
+      position: absolute;
+      top: vw-calc1440(-5);
+      right: vw-calc1440(-100); }
+      #cnt1 #about_box .ab2 #time .tb {
+        margin-bottom: vw-calc1440(5);
+        width: vw-calc1440(55);
+        height: vw-calc1440(25); }
+    #cnt1 #about_box .ab3 .txtcircle {
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      #cnt1 #about_box .ab3 .txtcircle img {
+        width: 100%;
+        animation: circle 15s linear infinite; }
+    #cnt1 #about_box .ab4 p {
+      width: vw-calc1440(200);
+      top: vw-calc1440(-6);
+      left: vw-calc1440(60); }
+  #cnt1 .arrow {
+    bottom: vw-calc1440(80);
+    right: vw-calc1440(120);
+    width: vw-calc1440(153);
+    height: vw-calc1440(69);
+    animation: arrow 1.5s linear infinite; }
+  @keyframes arrow {
+    0% {
+      right: vw-calc1440(120); }
+    50% {
+      right: vw-calc1440(100); }
+    100% {
+      right: vw-calc1440(120); } } }
 
 /*# sourceMappingURL=main.css.map */

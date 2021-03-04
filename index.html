@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title> 스와이퍼 </title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
@@ -10,9 +11,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/common.css">
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/gsap.min.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -34,7 +37,11 @@
             <p>A&nbsp;&nbsp;B&nbsp;&nbsp;O&nbsp;&nbsp;U&nbsp;&nbsp;T</p>
           </div>
           <div id="about_box">
-            <div class="ab1 boxshadow">마우스거리에 따라 움직이기</div>
+            <div class="ab1 boxshadow clearfix">
+              <img src="images/web_main.jpg" class="ab1photo">
+              <div class="black"></div>
+              <p>Move Your Mouse</p>
+            </div>
             <div class="ab2 boxshadow">
                 <video id="vd" src="" autoplay  muted loop>
                   <!-- 크롬에서는 autoplay muted -->
@@ -60,6 +67,11 @@
             </div>
             <div class="ab6">
             </div>
+            <!-- 비어있는 부분 ariahidden? -->
+          </div>
+          <div class="arrow">
+            <img src="images/화살표.svg" alt="">
+            <p>SCROLL</p>
           </div>
         </section>
         <section class="swiper-slide" id="cnt2">
