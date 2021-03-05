@@ -34,7 +34,7 @@ $(document).ready(function(){
     //console.log(h2);
     if (h2>=5 && h2<6) _ab2.attr({src:'video/sunrise.mp4'}); //새벽 다섯시부터 여섯시전까지
     if (h2>=6 && h2<18) _ab2.attr({src:'video/Clouds - 1154.mp4'});//새벽 여섯시부터 저녁 6시 전까지
-    if (h2>=18 && h2<=19) _ab2.attr({src:'video/sunsetmp4'});//저녁 6시부터 저녁 7시까지
+    if (h2>=18 && h2<=19) _ab2.attr({src:'video/sunset.mp4'});//저녁 6시부터 저녁 7시까지
     if (h2>19 && h2<=23) _ab2.attr({src:'video/Full Moon - 2144.mp4'});//저녁7시부터 밤 11시까지
     if ((h2>=0&&h2<5)) _ab2.attr({src:'video/Full Moon - 2144.mp4'});//밤12시부터새벽 다섯시전까지
  //버튼 클릭시 사진 변경이벤트
