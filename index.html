@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title> 스와이퍼 </title>
+    <title> JY Web Portfolio </title>
+    <link rel="apple-touch-icon" href="images/favicon.png"><!-- ios에서 바탕화면 바로 가기 아이콘 설정 -->
+    <link rel="shortcut icon" href="images/favicon.png"> <!-- ios를 제외한 나머지/안드로이드 핸드폰 -->
+    <link rel="icon" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
@@ -26,18 +29,19 @@
   <div id="lineright" class="line2"></div>
   <div class="swiper-container">
         <!--header -->
+        <header id="header">
+          <h1 id="logo"><img src="images/mainlogo.svg" alt=""></h1>
+        </header>
         <div class="swiper-pagination">
         </div>
-      <h1 id="logo"><img src="images/메인로고2.svg"></h1>
       <div class="swiper-wrapper">
         <!-- Content -->
         <section class="swiper-slide" id="cnt1">
-          <h2 class="blind">Main Page</h2>
           <div class="name">
-            <p>A&nbsp;&nbsp;B&nbsp;&nbsp;O&nbsp;&nbsp;U&nbsp;&nbsp;T</p>
+            <h2>A&nbsp;&nbsp;B&nbsp;&nbsp;O&nbsp;&nbsp;U&nbsp;&nbsp;T</h2>
           </div>
           <div id="about_box" class="grid_box">
-            <div class="ab ab1 boxshadow clearfix">
+            <div class="ab ab1 boxshadow">
               <img src="images/web_main.jpg" class="ab1photo">
               <div class="black"></div>
               <p>Move Your Mouse</p>
@@ -58,10 +62,11 @@
             <div class="ab ab3">
               <div class="txtcircle">
                 <img src="images/CIRCLE1_6.svg" alt="">
+              <!-- 영상에 대한 설명 적기 -->
               </div>
           </div>
             <div class="ab ab4">
-              <p class="about">누구나 쉽고 편하게 사용 할 수 있는 웹페이지를 만들고 기획자, 디자이너, 개발자간의 소통을 중요시 여기는 웹퍼블리셔 입니다.</p>
+              <p class="about">누구나 쉽고 편하게 사용할 수 있는 웹사이트를 제작하고 동료 간의 소통을 중요시 하는 웹퍼블리셔 입니다.</p>
             </div>
             <!-- <div class="ab5">
             </div>
@@ -70,31 +75,109 @@
             <!-- 비어있는 부분 ariahidden? -->
           </div>
           <div class="arrow">
-            <img src="images/화살표.svg" alt="">
+            <img src="images/arrowright.svg" alt="">
             <p>SCROLL</p>
           </div>
         </section>
         <section class="swiper-slide" id="cnt2">
-          <h2 class="blind">Skill</h2>
+          <div class="name">
+            <h2>S&nbsp;&nbsp;K&nbsp;&nbsp;I&nbsp;&nbsp;L&nbsp;&nbsp;L</h2>
+          </div>
           <div id="skill_box" class="grid_box">
-            <div class="sb sb1"></div>
+            <div class="sb sb1">
+              <div class="skillhead">
+                <span>PUBLISHING</span>
+                <img src="images/skill_arrow.svg" alt="">
+                <p>JS Method Chain Concept</p>
+              </div>
+              <div class="publishing skill_image">
+                  <img src="images/html.svg" alt="" class="html skill">
+                  <ul class="htmlinfo info">
+                    <li>#웹접근성 준수</li>
+                    <li>#SEMANTIC</li>
+                  </ul>
+                <img src="images/chain_horizontal.svg" class="ch ch1">
+                <img src="images/css.svg" alt="" class="css skill">
+                <ul class="cssinfo info">
+                  <li>#ANIMATION</li>
+                  <li>#3D TRANSFORM</li>
+                  <li>#GRID FLEX</li>
+                </ul>
+                <img src="images/chain_vertical.svg" class="cv cv1">
+                <img src="images/sass.svg" alt="" class="sass skill">
+                <ul class="sassinfo info">
+                  <li>#CSS Preprocessor</li>
+                  <li>#편한 유지보수</li>
+                </ul>
+                <img src="images/chain_vertical.svg" class="cv cv2">
+                <img src="images/js.svg" alt="" class="js skill">
+                <ul class="jsinfo info">
+                  <li>#IF</li>
+                  <li>#EACH</li>
+                  <li>#FOR</li>
+                  <li>#ARRAY</li>
+                  <li>#DOM&BOM</li>
+                </ul>
+                <img src="images/chain_vertical.svg" class="cv cv3">
+                <img src="images/jquery.svg" alt="" class="jquery skill">
+                <ul class="jqueryinfo info">
+                  <li>#동적제어</li>
+                  <li>#EVENT 함수</li>
+                  <li>#TAB BROWSING</li>
+                  <li>#FULL PAGE</li>
+                  <li>#MODAL</li>
+                </ul>
+              </div>
+            </div>
             <div class="sb sb2">
               <div class="txtcircle">
                 <img src="images/CIRCLE2.svg" alt="">
               </div>
             </div>
             <div class="sb sb3">
+              <div class="skillhead">
+                <span>VISION ROAD</span>
+                <img src="images/skill_arrow.svg" alt="">
+                <p>Vision Map To Being FrontEnd</p>
+              </div>
+              <div class="vision skill_image">
+                <img src="images/vue.svg" alt="" class="vue">
+                <img src="images/chain_horizontal.svg" alt="" class="ch ch2">
+                <img src="images/react.svg" alt="" class="react">
+                <img src="images/chain_vertical.svg" alt="" class="cv cv3">
+                <img src="images/typescript.svg" alt="" class="typescript">
+                <img src="images/chain_horizontal.svg" alt="" class="ch ch3">
+                <img src="images/angular.svg" alt="" class="angular">
+              </div>
             </div>
-            <div class="sb sb4"></div>
+            <div class="sb sb4">
+              <div class="skillhead">
+                <span>DESIGN</span>
+                <img src="images/skill_arrow.svg" alt="">
+                <p>Creative and Sensitive</p>
+              </div>
+              <div class="design skill_image">
+               <img src="images/photoshop.svg" alt="" class="photoshop">
+               <ul class="photoshopinfo info">
+                <li>#RENUAL</li>
+                <li>#WIRE FRAME</li>
+              </ul>
+               <img src="images/chain_horizontal.svg" alt="" class="ch ch4">
+               <img src="images/illustrator.svg" alt="" class="illustrator">
+               <ul class="illustinfo info">
+                <li>#LOGO </li>
+                <li>#SVG VECTOR</li>
+              </ul>
+              </div>
+            </div>
             <div class="sb sb5"></div>
-            <div class="sb sb6"></div>
-          </div>
-          <div class="name">
-            <p>S&nbsp;&nbsp;K&nbsp;&nbsp;I&nbsp;&nbsp;L&nbsp;&nbsp;L</p>
+            <!-- <div class="sb sb6"></div> -->
           </div>
         </section>
         <section class="swiper-slide" id="cnt3">
-          <h2 class="blind">Portfolio</h2>
+          <div class="name">
+            <h2>P&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;T&nbsp;&nbsp;F&nbsp;&nbsp;O&nbsp;&nbsp;L&nbsp;&nbsp;I&nbsp;&nbsp;O</h2>
+          </div>
             <div id="portfolio_box" class="grid_box">
               <div class="pb pb1"></div>
               <div class="pb pb2">
@@ -108,12 +191,11 @@
               <div class="pb pb5"></div>
               <div class="pb pb6"></div>
             </div>
-          <div class="name">
-            <p>P&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;T&nbsp;&nbsp;F&nbsp;&nbsp;O&nbsp;&nbsp;L&nbsp;&nbsp;I&nbsp;&nbsp;O</p>
-          </div>
         </section>
         <section class="swiper-slide" id="cnt4">
-          <h2 class="blind">Contact</h2>
+          <div class="name">
+            <h2>C&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;T&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;T</h2>
+          </div>
           <div id="contact_box" class="grid_box">
             <div class="cb cb1"></div>
             <div class="cb cb2">
@@ -126,10 +208,6 @@
             <div class="cb cb4"></div>
             <div class="cb cb5"></div>
             <div class="cb cb6"></div>
-          </div>
-
-          <div class="name">
-            <p>C&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;T&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;T</p>
           </div>
         </section>
      </div>

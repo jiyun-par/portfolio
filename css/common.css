@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 ul li {
   list-style: none; }
 
-section, footer {
+header, section, footer {
   display: block; }
 
 a:link, a:visited, a:active, a:hover {
@@ -149,6 +149,67 @@ body {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+.skillhead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  text-align: left;
+  font-family: "Roboto";
+  font-weight: 500; }
+  .skillhead span {
+    vertical-align: middle;
+    color: #243f88; }
+  .skillhead img {
+    width: 9px;
+    height: 11px;
+    position: absolute;
+    top: 15%;
+    right: -15px;
+    animation: triangle 1s linear infinite; }
+@keyframes triangle {
+  0% {
+    right: -15px; }
+  50% {
+    right: -20px; }
+  100% {
+    right: -15px; } }
+  .skillhead p {
+    display: inline-block;
+    position: absolute;
+    top: 10%; }
+
+.skill_image img {
+  width: 60px;
+  height: auto;
+  position: absolute; }
+.skill_image .skill {
+  cursor: pointer; }
+.skill_image .ch {
+  width: 45px;
+  height: 20px; }
+.skill_image .cv {
+  width: 20px;
+  height: 45px; }
+.skill_image .info {
+  position: absolute;
+  top: 50px;
+  right: -100px;
+  text-align: left;
+  transition: all 0.5s;
+  width: 180px;
+  height: 150px;
+  background-color: rgba(36, 63, 163, 0.295);
+  padding: 25px;
+  opacity: 0; }
+  .skill_image .info li {
+    white-space: nowrap;
+    line-height: 1.5;
+    font-weight: 500; }
+
+.db {
+  display: block; }
+
 .grid_box {
   -ms-display: grid;
   display: grid;

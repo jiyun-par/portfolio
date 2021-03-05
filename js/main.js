@@ -32,14 +32,14 @@ $(document).ready(function(){
     var timer2 =new Date();
     var h2 = timer2.getHours();
     //console.log(h2);
-    if (h2>=5 && h2<6) _ab2.attr({src:'video/일출.mp4'}); //새벽 다섯시부터 여섯시전까지
+    if (h2>=5 && h2<6) _ab2.attr({src:'video/sunrise.mp4'}); //새벽 다섯시부터 여섯시전까지
     if (h2>=6 && h2<18) _ab2.attr({src:'video/Clouds - 1154.mp4'});//새벽 여섯시부터 저녁 6시 전까지
-    if (h2>=18 && h2<=19) _ab2.attr({src:'video/일몰.mp4'});//저녁 6시부터 저녁 7시까지
+    if (h2>=18 && h2<=19) _ab2.attr({src:'video/sunsetmp4'});//저녁 6시부터 저녁 7시까지
     if (h2>19 && h2<=23) _ab2.attr({src:'video/Full Moon - 2144.mp4'});//저녁7시부터 밤 11시까지
     if ((h2>=0&&h2<5)) _ab2.attr({src:'video/Full Moon - 2144.mp4'});//밤12시부터새벽 다섯시전까지
  //버튼 클릭시 사진 변경이벤트
  $('.tb1').on('click',function(){
-    _ab2.attr({src:'video/일출.mp4'});
+    _ab2.attr({src:'video/sunrise.mp4'});
     $(this).addClass('btndeco').siblings().removeClass('btndeco');
  });
  $('.tb2').on('click',function(){
@@ -48,7 +48,7 @@ $(document).ready(function(){
 
  });
  $('.tb3').on('click',function(){
-    _ab2.attr({src:'video/일몰.mp4'});
+    _ab2.attr({src:'video/sunset.mp4'});
     $(this).addClass('btndeco').siblings().removeClass('btndeco');
 
  });
@@ -74,4 +74,12 @@ translateY = (e.pageY - centerY)/5;
 console.log(translateX,translateY);
 gsap.to('.ab1photo',{transform:'translate('+translateX+'px,'+translateY+'px)'});
 });
+$('.skill').on({
+   'mouseenter':function(){
+      $(this).next().stop().animate({right:'-220px',opacity:'1'},'500','easeInSine');
+   },
+   'mouseleave':function(){
+      $(this).next().stop().animate({right:'-100px',opacity:'0'},'500','easeInSine');
+   }
+})
 });         
