@@ -223,11 +223,70 @@ body {
   grid-gap: 40px; }
 
 @media screen and (max-width: 1440px) {
+  body {
+    font-size: 1.1111111111vw; }
+
+  #skip a:focus {
+    height: 3.4722222222vw;
+    line-height: 3.4722222222vw; }
+
+  #logo {
+    top: 1.3888888889vw;
+    left: 1.3888888889vw;
+    width: 5.5555555556vw;
+    height: 5.5555555556vw;
+    padding: 0.6944444444vw; }
+
   .name {
     font-size: 2.0833333333vw;
     top: 18.0555555556vw;
     right: 3vw;
     width: 19.5138888889vw;
-    height: 2.0833333333vw; } }
+    height: 2.0833333333vw; }
+
+  .boxshadow {
+    box-shadow: 0.3472222222vw 0.3472222222vw 0.3472222222vw; }
+
+  .txtcircle {
+    bottom: 2.0833333333vw;
+    right: -11.8055555556vw; }
+
+  .skillhead {
+    height: 1.3888888889vw; }
+    .skillhead img {
+      width: 0.625vw;
+      height: 0.7638888889vw;
+      right: -1.0416666667vw;
+      animation: triangle 1s linear infinite; }
+  @keyframes triangle {
+    0% {
+      right: -1.0416666667vw; }
+    50% {
+      right: -1.3888888889vw; }
+    100% {
+      right: -1.0416666667vw; } }
+  .skill_image img {
+    width: 4.1666666667vw; }
+  .skill_image .ch {
+    width: 3.125vw;
+    height: 1.3888888889vw; }
+  .skill_image .cv {
+    width: 1.3888888889vw;
+    height: 3.125vw; }
+  .skill_image .info {
+    top: 3.4722222222vw;
+    right: -6.9444444444vw;
+    width: 12.5vw;
+    height: 10.4166666667vw;
+    padding: 1.7361111111vw; }
+
+  .grid_box {
+    top: 9.0277777778vw;
+    left: 17vw;
+    width: 90.2777777778vw;
+    height: 42.3611111111vw;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 19.4444444444vw 19.4444444444vw;
+    grid-gap: 2.7777777778vw; } }
 
 /*# sourceMappingURL=common.css.map */

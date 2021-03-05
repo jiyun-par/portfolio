@@ -91,8 +91,47 @@ body{font-family: "Noto Sans Kr"; font-weight: 300; font-size: 16px; color:#222;
 
 }
 @media screen and(max-width:1440px){
-    .name{
-      font-size:vw-calc1440(30); top:vw-calc1440(260); right:3vw; width:vw-calc1440(281); height:vw-calc1440(30);
-    }
-    
+  body{font-size: vw-calc1440(16); 
+   }
+   #skip a{
+       &:focus{height:vw-calc1440(50); line-height: vw-calc1440(50); }
+   }
+   #logo{top:vw-calc1440(20); left:vw-calc1440(20);width:vw-calc1440(80); height:vw-calc1440(80);  padding:vw-calc1440(10);}
+   .name{
+      font-size:vw-calc1440(30);  top: vw-calc1440(260); right:3vw; width:vw-calc1440(281); height:vw-calc1440(30); 
+   }
+   .boxshadow{box-shadow: vw-calc1440(5) vw-calc1440(5) vw-calc1440(5);}
+   .txtcircle{
+       bottom:vw-calc1440(30); right:vw-calc1440(-170);
+       }
+       .skillhead{
+        height:vw-calc1440(20); 
+         img{
+           width:vw-calc1440(9); height:vw-calc1440(11);right:vw-calc1440(-15);
+           animation:triangle 1s linear infinite;
+         }
+         @keyframes triangle{
+           0%{right:vw-calc1440(-15);}
+           50%{right:vw-calc1440(-20);}
+           100%{right:vw-calc1440(-15);}
+         }
+       }
+       .skill_image{
+        img{width:vw-calc1440(60);
+       }
+        .ch{width:vw-calc1440(45); height:vw-calc1440(20);}
+        .cv{width:vw-calc1440(20); height:vw-calc1440(45); }
+        .info{
+           top:vw-calc1440(50); right:vw-calc1440(-100); width:vw-calc1440(180); height:vw-calc1440(150); 
+          padding:vw-calc1440(25); 
+       }
+       }
+   .grid_box{
+       top:vw-calc1440(130); left:17vw;
+       width:vw-calc1440(1300); height: vw-calc1440(610); 
+       grid-template-columns: 20vw 20vw 20vw;
+       grid-template-rows: vw-calc1440(280) vw-calc1440(280);
+       grid-gap:vw-calc1440(40);
+   }
+   
 }
