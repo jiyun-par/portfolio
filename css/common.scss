@@ -70,7 +70,7 @@ body{font-family: "Noto Sans Kr"; font-weight: 300; font-size: 16px; color:#222;
     .skill_image{
      img{width:60px; height:auto; position:absolute;
     }
-     .skill{cursor: pointer;
+     .skill{cursor: pointer; z-index: 300;
     }
      .ch{width:45px; height:20px;}
      .cv{width:20px; height:45px; }

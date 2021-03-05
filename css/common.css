@@ -184,7 +184,8 @@ body {
   height: auto;
   position: absolute; }
 .skill_image .skill {
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 300; }
 .skill_image .ch {
   width: 45px;
   height: 20px; }
