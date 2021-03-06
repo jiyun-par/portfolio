@@ -52,18 +52,19 @@ input, button {
 
 .blind {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.0520833333vw;
+  height: 0.0520833333vw;
   overflow: hidden;
   border: none;
-  margin: -1px;
-  clip: rect(1px, 1px, 1px, 1px);
+  margin: -0.0520833333vw;
+  clip: rect(0.0520833333vw, 0.0520833333vw, 0.0520833333vw, 0.0520833333vw);
   clip-path: inset(50%); }
 
 body {
+  height: 100%;
   font-family: "Noto Sans Kr";
   font-weight: 300;
-  font-size: 16px;
+  font-size: 0.8333333333vw;
   color: #222;
   word-break: keep-all;
   line-height: 1;
@@ -76,24 +77,24 @@ body {
 #skip a {
   position: absolute;
   top: 0;
-  left: -9999px;
+  left: -520.78125vw;
   z-index: 1000; }
   #skip a:focus {
     left: 0;
     width: 100%;
-    height: 50px;
-    line-height: 50px;
+    height: 2.6041666667vw;
+    line-height: 2.6041666667vw;
     text-align: center; }
 
 #logo {
   position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 80px;
-  height: 80px;
+  top: 1.0416666667vw;
+  left: 1.0416666667vw;
+  width: 4.1666666667vw;
+  height: 4.1666666667vw;
   cursor: pointer;
   z-index: 500;
-  padding: 10px; }
+  padding: 0.5208333333vw; }
 
 .name {
   -webkit-transform: rotate(90deg);
@@ -103,12 +104,12 @@ body {
   transform: rotate(90deg);
   font-family: "Roboto";
   font-weight: 600;
-  font-size: 30px;
+  font-size: 1.5625vw;
   position: absolute;
-  top: 260px;
-  right: 110px;
-  width: 281px;
-  height: 30px;
+  top: 15.8854166667vw;
+  right: 4.6875vw;
+  width: 14.6354166667vw;
+  height: 1.5625vw;
   text-align: left; }
 
 .bg1 {
@@ -124,7 +125,7 @@ body {
   background: url(../images/밤.jpg) no-repeat center; }
 
 .boxshadow {
-  box-shadow: 5px 5px 5px rgba(46, 46, 46, 0.301); }
+  box-shadow: 0.2604166667vw 0.2604166667vw 0.2604166667vw rgba(46, 46, 46, 0.301); }
 
 .btndeco {
   color: #243f88;
@@ -136,12 +137,16 @@ body {
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+  width: 7.8125vw;
+  height: 7.8125vw;
   position: absolute;
   z-index: 100;
-  bottom: 30px;
-  right: -170px;
+  bottom: 1.5625vw;
+  right: -8.8541666667vw;
   animation: circle2 0.5s linear 1.5s 1 forwards; }
   .txtcircle img {
+    width: 7.8125vw;
+    height: 7.8125vw;
     width: 100%;
     animation: circle 15s linear infinite; }
 @keyframes circle {
@@ -153,60 +158,73 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 20px;
+  width: auto;
+  height: 1.0416666667vw;
   text-align: left;
-  font-family: "Roboto";
   font-weight: 500; }
   .skillhead span {
     vertical-align: middle;
     color: #243f88; }
   .skillhead img {
-    width: 9px;
-    height: 11px;
+    width: 0.46875vw;
+    height: 0.5729166667vw;
     position: absolute;
     top: 15%;
-    right: -15px;
+    right: -0.78125vw;
     animation: triangle 1s linear infinite; }
 @keyframes triangle {
   0% {
-    right: -15px; }
+    right: -0.78125vw; }
   50% {
-    right: -20px; }
+    right: -1.0416666667vw; }
   100% {
-    right: -15px; } }
+    right: -0.78125vw; } }
   .skillhead p {
     display: inline-block;
     position: absolute;
-    top: 10%; }
+    top: 5%; }
 
 .skill_image img {
-  width: 60px;
+  width: 3.125vw;
   height: auto;
   position: absolute; }
 .skill_image .skill {
   cursor: pointer;
   z-index: 300; }
+.skill_image .skill_d {
+  cursor: pointer;
+  z-index: 300; }
 .skill_image .ch {
-  width: 45px;
-  height: 20px; }
+  width: 2.34375vw;
+  height: 1.0416666667vw; }
 .skill_image .cv {
-  width: 20px;
-  height: 45px; }
+  width: 1.0416666667vw;
+  height: 2.34375vw; }
 .skill_image .info {
   position: absolute;
-  top: 50px;
-  right: -100px;
+  top: 2.6041666667vw;
+  right: -5.2083333333vw;
   text-align: left;
   transition: all 0.5s;
-  width: 180px;
-  height: 150px;
-  background-color: rgba(36, 63, 163, 0.295);
-  padding: 25px;
+  width: 9.375vw;
+  height: 7.8125vw;
+  padding: 1.3020833333vw;
   opacity: 0; }
   .skill_image .info li {
+    display: inline-block;
     white-space: nowrap;
-    line-height: 1.5;
-    font-weight: 500; }
+    line-height: 2;
+    font-weight: 500;
+    position: relative; }
+  .skill_image .info li::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.5208333333vw;
+    background-color: rgba(36, 63, 163, 0.295);
+    position: absolute;
+    bottom: 0.15625vw;
+    left: 0; }
 
 .db {
   display: block; }
@@ -215,79 +233,12 @@ body {
   -ms-display: grid;
   display: grid;
   position: absolute;
-  top: 130px;
-  left: 320px;
-  width: 1300px;
-  height: 610px;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 280px 280px;
-  grid-gap: 40px; }
-
-@media screen and (max-width: 1440px) {
-  body {
-    font-size: 1.1111111111vw; }
-
-  #skip a:focus {
-    height: 3.4722222222vw;
-    line-height: 3.4722222222vw; }
-
-  #logo {
-    top: 1.3888888889vw;
-    left: 1.3888888889vw;
-    width: 5.5555555556vw;
-    height: 5.5555555556vw;
-    padding: 0.6944444444vw; }
-
-  .name {
-    font-size: 2.0833333333vw;
-    top: 18.0555555556vw;
-    right: 3vw;
-    width: 19.5138888889vw;
-    height: 2.0833333333vw; }
-
-  .boxshadow {
-    box-shadow: 0.3472222222vw 0.3472222222vw 0.3472222222vw; }
-
-  .txtcircle {
-    bottom: 2.0833333333vw;
-    right: -11.8055555556vw; }
-
-  .skillhead {
-    height: 1.3888888889vw; }
-    .skillhead img {
-      width: 0.625vw;
-      height: 0.7638888889vw;
-      right: -1.0416666667vw;
-      animation: triangle 1s linear infinite; }
-  @keyframes triangle {
-    0% {
-      right: -1.0416666667vw; }
-    50% {
-      right: -1.3888888889vw; }
-    100% {
-      right: -1.0416666667vw; } }
-  .skill_image img {
-    width: 4.1666666667vw; }
-  .skill_image .ch {
-    width: 3.125vw;
-    height: 1.3888888889vw; }
-  .skill_image .cv {
-    width: 1.3888888889vw;
-    height: 3.125vw; }
-  .skill_image .info {
-    top: 3.4722222222vw;
-    right: -6.9444444444vw;
-    width: 12.5vw;
-    height: 10.4166666667vw;
-    padding: 1.7361111111vw; }
-
-  .grid_box {
-    top: 9.0277777778vw;
-    left: 17vw;
-    width: 90.2777777778vw;
-    height: 42.3611111111vw;
-    grid-template-columns: 20vw 20vw 20vw;
-    grid-template-rows: 19.4444444444vw 19.4444444444vw;
-    grid-gap: 2.7777777778vw; } }
+  top: 9.375vw;
+  left: 16.6666666667vw;
+  width: 67.7083333333vw;
+  height: 31.7708333333vw;
+  grid-template-columns: repeat(3, 20.8333333333vw);
+  grid-template-rows: repeat(3, 14.5833333333vw);
+  grid-gap: 2.0833333333vw; }
 
 /*# sourceMappingURL=common.css.map */

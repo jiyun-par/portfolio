@@ -15,3 +15,7 @@
     $vwSize : ($px /14.4);
     @return #{$vwSize}vw;
 }
+@function vw-calc1920($px){
+    $vwSize : ($px/19.2);
+    @return #{$vwSize}vw;
+}
