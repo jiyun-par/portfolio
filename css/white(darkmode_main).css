@@ -1,0 +1,60 @@
+#loading.white {
+  background: #040213;
+  color: white; }
+  #loading.white .progress_bar {
+    background: white; }
+
+#wrap .scroll_bar {
+  background: #000; }
+#wrap .swiper-container.white .swiper-pagination-bullets .swiper-pagination-bullet::after {
+  background: #eeeeee; }
+#wrap .swiper-container.white .swiper-scrollbar {
+  background: #ebebeb; }
+#wrap .swiper-container.white .swiper-scrollbar-drag {
+  background: white; }
+#wrap .line.white {
+  background: #ffffff31; }
+#wrap .line2.white {
+  background: #ffffff31; }
+#wrap #cnt1 .clock.white {
+  color: #ffffff; }
+#wrap #cnt3 .txtcircle {
+  right: -5.7291666667vw; }
+#wrap #cnt3 #portfolio_Tab.white .pr_list li {
+  color: rgba(201, 201, 201, 0.418); }
+#wrap #cnt3 #portfolio_Tab.white .pr_list li.active, #wrap #cnt3 #portfolio_Tab.white .tabpanel {
+  color: #f0f0f0 !important; }
+#wrap #cnt3 #portfolio_Tab.white #works .work_box1 .pb1::-webkit-scrollbar-thumb {
+  background-color: #e7e7e7 !important; }
+#wrap #cnt3 #portfolio_Tab.white #works .work_box1 .pb1::-webkit-scrollbar-thumb:hover {
+  background-color: #bdbdbd !important; }
+#wrap #cnt3 #portfolio_Tab.white #works .work_box1 .pb1::-webkit-scrollbar-track {
+  background-color: #fff !important; }
+#wrap #cnt3 #portfolio_Tab.white #works .pb5 .site a {
+  border-bottom: 0.2604166667vw solid #f8f8f8 !important; }
+  #wrap #cnt3 #portfolio_Tab.white #works .pb5 .site a::before {
+    background: #e7e7e7 !important; }
+  #wrap #cnt3 #portfolio_Tab.white #works .pb5 .site a:hover {
+    color: #07091d !important; }
+#wrap #cnt3 #portfolio_Tab.white #project .work_box1 .pb1::-webkit-scrollbar-thumb {
+  background-color: #e7e7e7 !important; }
+#wrap #cnt3 #portfolio_Tab.white #project .work_box1 .pb1::-webkit-scrollbar-thumb:hover {
+  background-color: #bdbdbd !important; }
+#wrap #cnt3 #portfolio_Tab.white #project .work_box1 .pb1::-webkit-scrollbar-track {
+  background-color: #fff !important; }
+#wrap #cnt3 #portfolio_Tab.white #project .pb5 .site a {
+  border-bottom: 0.2604166667vw solid #f8f8f8 !important; }
+  #wrap #cnt3 #portfolio_Tab.white #project .pb5 .site a::before {
+    background: #e7e7e7 !important; }
+  #wrap #cnt3 #portfolio_Tab.white #project .pb5 .site a:hover {
+    color: #07091d !important; }
+#wrap #view #portfolio_box3 .pb1, #wrap #view #portfolio_box3 .pb2, #wrap #view #portfolio_box3 .pb3, #wrap #view #portfolio_box3 .pb4, #wrap #view #portfolio_box3 .pb5, #wrap #view #portfolio_box3 .pb6 {
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  background-size: cover !important; }
+  #wrap #view #portfolio_box3 .pb1::after, #wrap #view #portfolio_box3 .pb2::after, #wrap #view #portfolio_box3 .pb3::after, #wrap #view #portfolio_box3 .pb4::after, #wrap #view #portfolio_box3 .pb5::after, #wrap #view #portfolio_box3 .pb6::after {
+    background: rgba(255, 255, 255, 0.274); }
+  #wrap #view #portfolio_box3 .pb1:hover::after, #wrap #view #portfolio_box3 .pb2:hover::after, #wrap #view #portfolio_box3 .pb3:hover::after, #wrap #view #portfolio_box3 .pb4:hover::after, #wrap #view #portfolio_box3 .pb5:hover::after, #wrap #view #portfolio_box3 .pb6:hover::after {
+    background: rgba(163, 163, 163, 0.274); }
+
+/*# sourceMappingURL=white(darkmode_main).css.map */

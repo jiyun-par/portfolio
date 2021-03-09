@@ -7,20 +7,28 @@
     <link rel="apple-touch-icon" href="images/favicon2.png"><!-- ios에서 바탕화면 바로 가기 아이콘 설정 -->
     <link rel="shortcut icon" href="images/favicon2.png"> <!-- ios를 제외한 나머지/안드로이드 핸드폰 -->
     <link rel="icon" href="images/favicon2.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
     <link rel="stylesheet" href="css/swiper-bundle.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/white(darkmode_common).css">
+    <link rel="stylesheet" href="css/white(darkmode_main).css">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
     <script src="js/gsap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 </head>
 <body>
+  <div id="loading">
+    <div class="progress_bar"></div>
+    <div class="progress_txt">0%</div>
+  </div>
 <div id="wrap" class="clearfix">
   <!-- 배경 라인 -->
   <div id="lineTop" class="line"></div>
@@ -30,58 +38,35 @@
   <div class="swiper-container">
         <!--header -->
         <header id="header">
+          <div class="scroll_bar"></div>
+          <div class="time headTime">
+            <button type="button" class="tb tb1">06:00AM</button>
+            <button type="button" class="tb tb2">12:00PM</button>
+            <button type="button" class="tb tb3">18:00PM</button>
+            <button type="button" class="tb tb4">22:00PM</button>
+            <button type="button" class="tb tb5">RESET</button>
+          </div>
           <h1 id="logo"><img src="images/mainlogo.svg" alt="mainlogo"></h1>
         </header>
         <div class="swiper-pagination">
         </div>
       <div class="swiper-wrapper">
         <!-- Content -->
-        <section class="swiper-slide" id="cnt1">
+        <!-- 본문1번 -->
+        <section class="swiper-slide clearfix" id="cnt1">
           <div class="name">
-            <h2>A&nbsp;&nbsp;B&nbsp;&nbsp;O&nbsp;&nbsp;U&nbsp;&nbsp;T</h2>
+            <h2>H&nbsp;0&nbsp;M&nbsp;E</h2>
           </div>
-          <div id="about_box" class="grid_box clearfix">
-            <div class="ab ab1 boxshadow">
-              <img src="images/web_main.jpg" class="ab1photo">
-              <div class="black"></div>
-              <p>Move Your Mouse</p>
-            </div>
-            <div class="ab ab2 boxshadow">
-                <video id="vd" src="" autoplay  muted loop>
-                  <!-- 크롬에서는 autoplay muted -->
-                </video>
-              <p class="clock"></p>
-              <div id="time">
-                <button type="button" class="tb tb1">05:00am</button>
-                <button type="button" class="tb tb2">08:00am</button>
-                <button type="button" class="tb tb3">18:00pm</button>
-                <button type="button" class="tb tb4">22:00pm</button>
-                <button type="button" class="tb tb5">RESET</button>
-              </div>
-            </div>
-            <div class="ab ab3">
-              <div class="txtcircle">
-                <img src="images/CIRCLE1_6.svg" alt="">
-              <!-- 영상에 대한 설명 적기 -->
-              </div>
-          </div>
-            <div class="ab ab4">
-              <p class="about">누구나 쉽고 편하게 사용할 수 있는 웹사이트를 제작하고 동료 간의 소통을 중요시 하는 웹퍼블리셔 입니다.</p>
-            </div>
-<!--             <div class="ab5">
-            </div>
-            <div class="ab6">
-            </div>
- -->            <!-- 비어있는 부분 ariahidden? -->
-          </div>
-          <div class="arrow">
-            <img src="images/arrowright.svg" alt="">
-            <p>SCROLL</p>
-          </div>
+          <p class="clock txtshadow"></p>
+           <div class="main_photo">
+             <div class="black"></div>
+             <img src="" alt="main">
+           </div>
         </section>
-        <section class="swiper-slide" id="cnt2">
+        <!-- 본문2번 -->
+        <section class="swiper-slide clearfix" id="cnt2">
           <div class="name">
-            <h2>S&nbsp;&nbsp;K&nbsp;&nbsp;I&nbsp;&nbsp;L&nbsp;&nbsp;L</h2>
+            <h2>S&nbsp;K&nbsp;I&nbsp;L&nbsp;L</h2>
           </div>
           <div id="skill_box" class="grid_box">
             <div class="sb sb1">
@@ -141,13 +126,13 @@
                 <p>FrontEnd 꿈을 위한 Study Plan</p>
               </div>
               <div class="vision skill_image">
-                <img src="images/vue.svg" alt="vue" class="vue">
+                <img src="images/vue.svg" alt="vue" class="vue vision_skill">
                 <img src="images/chain_horizontal.svg" alt="" class="ch ch2">
-                <img src="images/react.svg" alt="react" class="react">
+                <img src="images/react.svg" alt="react" class="react vision_skill">
                 <img src="images/chain_vertical.svg" alt="" class="cv cv3">
-                <img src="images/typescript.svg" alt="typecript" class="typescript">
+                <img src="images/typescript.svg" alt="typecript" class="typescript vision_skill">
                 <img src="images/chain_horizontal.svg" alt="" class="ch ch3">
-                <img src="images/angular.svg" alt="angular" class="angular">
+                <img src="images/angular.svg" alt="angular" class="angular vision_skill">
               </div>
             </div>
             <div class="sb sb4">
@@ -174,49 +159,138 @@
             <!-- <div class="sb sb6"></div> -->
           </div>
         </section>
-        <section class="swiper-slide" id="cnt3">
+        <!-- 본문3번 -->
+        <section class="swiper-slide clearfix" id="cnt3">
           <div class="name">
-            <h2>P&nbsp;&nbsp;O&nbsp;&nbsp;R&nbsp;&nbsp;T&nbsp;&nbsp;F&nbsp;&nbsp;O&nbsp;&nbsp;L&nbsp;&nbsp;I&nbsp;&nbsp;O</h2>
+            <h2>P&nbsp;O&nbsp;R&nbsp;T&nbsp;F&nbsp;O&nbsp;L&nbsp;I&nbsp;O</h2>
           </div>
           <div id="portfolio_Tab" class="tab_pr">
             <ul role="tablist" class="pr_list" aria-lable="포트폴리오">
-               <li role="tab" class="tab first" aria-controls="works" id="tab1">WORK</li> 
-               <li role="tab" class="tab" aria-controls="project" id="tab2">PROJECT</li> 
-               <li role="tab" class="tab last" aria-controls="view" id="tab3">VIEW ALL</li> 
+               <li role="tab" class="tab first" aria-controls="works" id="tab1"><h3>WORKS</h3></li> 
+               <li role="tab" class="tab" aria-controls="project" id="tab2"><h3>PROJECT</h3></li> 
+               <li role="tab" class="tab last" aria-controls="view" id="tab3"><h3>VIEW ALL</h3></li> 
             </ul>
             <div role="tabpanel" class="tabpanel" aria-labeledby="tab1" id="works">
-              <div id="portfolio_box1" class="grid_box portfolio_box">
-                <div class="pb pb1">works</div>
+              <div  id="portfolio_box1"class="grid_box portfolio_box work_box1">
+                <div class="pb pb1">
+                  <img src="images/laonfullpage.jpg" alt="라온시큐어사이트">
+                </div>
                 <div class="pb pb2">
+                  <h4>#1 Raon Secure 라온시큐어</h4>
+                  <ul class="works_keyword">
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Responsive</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;vw calculate</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;FullPage</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Swiper Slide</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Video Modal</li>
+                  </ul>
                   <div class="txtcircle">
                     <img src="images/CIRCLE3.svg" alt="">
                   </div>
                 </div>
                 <div class="pb pb3">
+                  <h4><i class="fas fa-user-graduate"></i>&nbsp;&nbsp;STUDY POINT</h4>
+                  <div class="study">
+                    <ul>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;fullpage 오픈소스 활용</li>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;swiper 오픈소스 활용</li>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;Modal 접근성 제어</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="pb pb4"></div>
-                <div class="pb pb5"></div>
-                <div class="pb pb6"></div>
+                <div class="pb pb4">
+                  <h4><i class="fas fa-globe"></i>&nbsp;&nbsp;웹접근성 준수 POINT</h4>
+                  <div class="worksinfo wi1">
+                         <h5>1. 반복텍스트 숨김 aria-hidden</h5>
+                         <h6>&lt;Tooltip의 제목 텍스트&gt;</h6>
+                            <p><b>Meaning </b>:<br>Screen Reader에서 tooltip에 들어가는 텍스트와, 본문 제목태그로 들어가는 텍스트의 중복 읽기를 방지하기 위해 aria-hidden 속성을 추가</p>
+                            <p><b>Processing Method</b>:<br>script에서 tooltip 속성에 attr('aria-hidden' ,'true')를 추가하여 제어</p>
+                  </div>
+                  <div class="worksinfo wi2">
+                         <h5>2. Modal 접근성</h5>
+                         <h6>&lt;Video가 들어간 Modal&gt;</h6>
+                            <p><b>Meaning </b>:<br>스크린리더에서 모달 이외의 모든 콘텐츠는 읽어주지 못하도록 처리</p>
+                            <p><b>Processing Method</b>:<br>현재 보여지는 모달 상세내용을 제외한 나머지 모두를<br>aria-hidden과 inert 속성으로 차단하고,<br>모달 열기 닫기 버튼 클릭시 포커스 강제 이동 제어</p>
+                  </div>
+                  <div class="right_left">
+                    <button type="button" class="left"><i class="fas fa-chevron-left"></i></button>
+                    <button type="button" class="right"><i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+                <div class="pb pb5">
+                  <div class="btn_move site">
+                    <a href="https://www.raoncorp.com/ko/main" target="_blank">Original Site</a>
+                    <a href="laon/index.html" target="_blank">Clone Site</a>
+                  </div>
+                </div>
+              </div>
+              <div class="btn_move prev_next">
+                <button type="button" class=" prev"><i class="fas fa-angle-left rl"></i>&nbsp;Prev</button>
+                <button type="button" class=" next">Next&nbsp;<i class="fas fa-angle-right rl"></i></button>
               </div>
          </div> 
             <div role="tabpanel" class="tabpanel" aria-labeledby="tab2" id="project">
-              <div id="portfolio_box2" class="grid_box portfolio_box">
-                <div class="pb pb1">project</div>
+              <div  id="portfolio_box2"class="grid_box portfolio_box work_box1">
+                <div class="pb pb1">
+                  <img src="images/nespresso fullpage.jpg" alt="라온시큐어사이트">
+                </div>
                 <div class="pb pb2">
+                  <h4>#1 Nespresso 네스프레소 리뉴얼</h4>
+                  <ul class="works_keyword">
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Responsive</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;vw calculate</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;FullPage</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Swiper Slide</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Video Modal</li>
+                  </ul>
                   <div class="txtcircle">
                     <img src="images/CIRCLE3.svg" alt="">
                   </div>
                 </div>
                 <div class="pb pb3">
+                  <h4><i class="far fa-lightbulb"></i>&nbsp;&nbsp;Renual Concept</h4>
+                  <div class="study">
+                    <ul>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;fullpage 오픈소스 활용</li>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;swiper 오픈소스 활용</li>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;Modal 접근성 제어</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="pb pb4"></div>
-                <div class="pb pb5"></div>
-                <div class="pb pb6"></div>
+                <div class="pb pb4">
+                  <h4><i class="fas fa-globe"></i>&nbsp;&nbsp;웹접근성 준수 POINT</h4>
+                  <div class="worksinfo wi1">
+                         <h5>1. 반복텍스트 숨김 aria-hidden</h5>
+                         <h6>&lt;Tooltip의 제목 텍스트&gt;</h6>
+                            <p><b>Meaning </b>:<br>Screen Reader에서 tooltip에 들어가는 텍스트와, 본문 제목태그로 들어가는 텍스트의 중복 읽기를 방지하기 위해 aria-hidden 속성을 추가</p>
+                            <p><b>Processing Method</b>:<br>script에서 tooltip 속성에 attr('aria-hidden' ,'true')를 추가하여 제어</p>
+                  </div>
+                  <div class="worksinfo wi2">
+                         <h5>2. Modal 접근성</h5>
+                         <h6>&lt;Video가 들어간 Modal&gt;</h6>
+                            <p><b>Meaning </b>:<br>스크린리더에서 모달 이외의 모든 콘텐츠는 읽어주지 못하도록 처리</p>
+                            <p><b>Processing Method</b>:<br>현재 보여지는 모달 상세내용을 제외한 나머지 모두를<br>aria-hidden과 inert 속성으로 차단하고,<br>모달 열기 닫기 버튼 클릭시 포커스 강제 이동 제어</p>
+                  </div>
+                  <div class="right_left">
+                    <button type="button" class="left"><i class="fas fa-chevron-left"></i></button>
+                    <button type="button" class="right"><i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+                <div class="pb pb5">
+                  <div class="btn_move site">
+                    <a href="https://www.nespresso.com/pro/kr/ko/professional-contactus?gclid=CjwKCAiAkJKCBhAyEiwAKQBCki9QL3Hy1urtWwKMmrSXNCyGwhHC3xE_KSH6lpljyTcNV2k09_uUIRoCJGQQAvD_BwE" target="_blank">Original Site</a>
+                    <a href="nespresso/nespresso_main.html" target="_blank">Renual Site</a>
+                  </div>
+                </div>
+              </div>
+              <div class="btn_move prev_next">
+                <button type="button" class=" prev"><i class="fas fa-angle-left rl"></i>&nbsp;Prev</button>
+                <button type="button" class=" next">Next&nbsp;<i class="fas fa-angle-right rl"></i></button>
               </div>
             </div>
             <div role="tabpanel" class="tabpanel" aria-labeledby="tab3" id="view">
               <div id="portfolio_box3" class="grid_box portfolio_box">
-                <div class="pb pb1">view all</div>
+                <div class="pb pb1"></div>
                 <div class="pb pb2">
                   <div class="txtcircle">
                     <img src="images/CIRCLE3.svg" alt="">
@@ -231,12 +305,43 @@
             </div>
         </div>
         </section>
-        <section class="swiper-slide" id="cnt4">
+        <!-- footer -->
+        <section class="swiper-slide clearfix" id="cnt4">
           <div class="name">
-            <h2>C&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;T&nbsp;&nbsp;A&nbsp;&nbsp;C&nbsp;&nbsp;T</h2>
+            <h2>C&nbsp;O&nbsp;N&nbsp;T&nbsp;A&nbsp;C&nbsp;T</h2>
           </div>
           <div id="contact_box" class="grid_box">
-            <div class="cb cb1"></div>
+            <div class="cb cb1">
+              <div class="my_infobox">
+                <h6><i class="fas fa-envelope-open-text"></i>&nbsp;&nbsp;Information</h6>
+                 <ul class="my">
+                   <li>Name : 박지윤(Park Ji Yun)</li>
+                   <li>Birth : 1993.04</li>
+                 </ul>
+              </div>
+              <div class="my_infobox">
+                <h6><i class="fas fa-envelope"></i>&nbsp;&nbsp;Contact</h6>
+                 <ul class="my">
+                   <li>E-Mail : jyun1937@naver.com</li>
+                 </ul>
+              </div>
+              <div class="my_infobox">
+                <h6><i class="fas fa-graduation-cap"></i>&nbsp;Education</h6>
+                 <ul class="my">
+                   <li>2020.09 ~ 2021.03(6 Month)</li>
+                   <li>하이미디어아카데미 성남점</li>
+                   <li>UI/UX웹디자인/웹퍼블리셔 전문가 과정 수료</li>
+                 </ul>
+              </div>
+               <div class="my_infobox">
+                 <h6><i class="fas fa-certificate"></i>&nbsp;&nbsp;Certificate</h6>
+                 <ul class="my">
+                   <li>GTQ Photoshop 1급</li>
+                   <li>웹디자인 기능사</li>
+                   <li>TOEIC SPEAKING Lv.6</li>
+                 </ul>
+               </div>
+            </div>
             <div class="cb cb2">
               <div class="txtcircle">
                 <img src="images/CIRCLE4.svg" alt="">
@@ -246,7 +351,6 @@
             </div>
             <div class="cb cb4"></div>
             <div class="cb cb5"></div>
-            <div class="cb cb6"></div>
           </div>
         </section>
      </div>

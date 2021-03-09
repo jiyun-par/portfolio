@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import "_mixin";
+@import "_var";
+@import "_function";
+//#loading,.swiper-container,  .pr_list li.active.white,.tabpanel.white, .pb1.white,.pb5.white
+#loading.white{
+  background: rgb(4, 2, 19); color: rgb(255, 255, 255);
+  .progress_bar{
+   background: rgb(255, 255, 255);
+  }
+  .progress_txt{
+  }
+}
+#wrap{
+  .scroll_bar{background: #000; }//위에 넣을지 말지 안정한거
+.swiper-container.white{
+    .swiper-pagination-bullets{
+        .swiper-pagination-bullet{
+          &::after{
+         background: rgb(238, 238, 238); }
+          }
+        }
+    .swiper-scrollbar{
+      background: rgb(235, 235, 235);
+    }
+    .swiper-scrollbar-drag{
+      background: rgb(255, 255, 255);
+    }
+  }
+
+  //배경 라인 스타일
+  .line.white{background: #ffffff31;}
+  .line2.white{ background: #ffffff31; }
+  #cnt1{
+      .clock.white{
+          color:#ffffff;
+      }
+  }
+ #cnt3{
+   .txtcircle{
+     right:vw-calc1920(-110)
+   }
+  #portfolio_Tab.white{
+    .pr_list li{color:rgba(201, 201, 201, 0.418)}
+  .pr_list li.active,.tabpanel{color:rgb(240, 240, 240)!important;}
+  #works{
+     .work_box1{
+        .pb1{
+            &::-webkit-scrollbar-thumb{background-color: #e7e7e7!important;}
+            &::-webkit-scrollbar-thumb:hover{background-color: #bdbdbd!important;}
+           &::-webkit-scrollbar-track{background-color: #fff!important;}
+        }
+        }
+        .pb5{
+          .site{
+            a{
+              border-bottom: vw-calc1920(5) solid  #f8f8f8!important;
+              &::before{background: #e7e7e7!important; }
+              &:hover{color:#07091d!important;}
+            }
+            }
+          }
+        }
+      
+  #project{
+    .work_box1{
+        .pb1{
+            &::-webkit-scrollbar-thumb{background-color: #e7e7e7!important;}
+            &::-webkit-scrollbar-thumb:hover{background-color: #bdbdbd!important;}
+           &::-webkit-scrollbar-track{background-color: #fff!important;}
+             }
+             }
+             .pb5{
+               .site{
+                 a{
+                   border-bottom: vw-calc1920(5) solid  #f8f8f8!important;
+                   &::before{background: #e7e7e7!important; }
+                   &:hover{color:#07091d!important;}
+                  }
+                 }
+               }
+             }
+            }
+           }
+      #view{
+        #portfolio_box3{
+        .pb1,.pb2,.pb3,.pb4,.pb5,.pb6{
+          @include bgsize(cover);
+          &::after{background: rgba(255, 255, 255, 0.274);}
+          &:hover::after{background: rgba(163, 163, 163, 0.274);}
+        }
+        }
+      }
+    }
+  
+  
+
+

@@ -26,12 +26,15 @@ img, figure, video {
 button {
   border: none;
   background: none;
-  cursor: pointer; }
+  cursor: url(../images/cursor_yellow.cur), auto; }
 
 input, button {
   font-family: inherit;
   font-size: 100%;
   color: inherit; }
+
+body, html {
+  cursor: url(../images/cursor_black.cur), auto; }
 
 .f_l {
   float: left; }
@@ -74,6 +77,34 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
+#wrap {
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 35s linear infinite; }
+
+#wrap.dawn {
+  background-image: linear-gradient(45deg, #64b3f4, #ffd89b, #bfe0f7, #ceaa7b, #ffd89b, #e4bef0);
+  /* 새벽 */ }
+
+#wrap.day {
+  background-image: linear-gradient(45deg, #c2e59c, #64b3f4, #c6f6ff, #64b3f4, #c2e59c, #64b3f4);
+  /* 낮 */ }
+
+#wrap.evening {
+  background-image: linear-gradient(45deg, #556270, #b6482d, #3f4e5e, #8a6a00, #b6482d, #556270);
+  /*저녁 */ }
+
+#wrap.night {
+  background-image: linear-gradient(45deg, #141431, #212d35, #292E49, #04030a, #24353f, #292E49);
+  /* 한밤 */ }
+
+@keyframes change {
+  0% {
+    background-position: 0 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0 50%; } }
 #skip a {
   position: absolute;
   top: 0;
@@ -92,7 +123,7 @@ body {
   left: 1.0416666667vw;
   width: 4.1666666667vw;
   height: 4.1666666667vw;
-  cursor: pointer;
+  cursor: url(../images/cursor_yellow.cur), auto;
   z-index: 500;
   padding: 0.5208333333vw; }
 
@@ -102,7 +133,8 @@ body {
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  font-family: "Roboto";
+  z-index: 300;
+  font-family: "Roboto Mono";
   font-weight: 600;
   font-size: 1.5625vw;
   position: absolute;
@@ -125,10 +157,13 @@ body {
   background: url(../images/밤.jpg) no-repeat center; }
 
 .boxshadow {
-  box-shadow: 0.2604166667vw 0.2604166667vw 0.2604166667vw rgba(46, 46, 46, 0.301); }
+  box-shadow: 0.2604166667vw 0.2604166667vw 0.2604166667vw rgba(46, 46, 46, 0.2); }
+
+.txtshadow {
+  text-shadow: 0.2604166667vw 0.2604166667vw 0.2604166667vw rgba(46, 46, 46, 0.2); }
 
 .btndeco {
-  color: #243f88;
+  color: #f1f1f1;
   font-weight: 500; }
 
 .txtcircle {
@@ -187,12 +222,8 @@ body {
 .skill_image img {
   width: 3.125vw;
   height: auto;
-  position: absolute; }
-.skill_image .skill {
-  cursor: pointer;
-  z-index: 300; }
-.skill_image .skill_d {
-  cursor: pointer;
+  position: absolute;
+  cursor: url(../images/cursor_yellow.cur), auto;
   z-index: 300; }
 .skill_image .ch {
   width: 2.34375vw;
@@ -226,6 +257,22 @@ body {
     bottom: 0.15625vw;
     left: 0; }
 
+#works .btn_move, #project .btn_move {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+  #works .btn_move button, #works .btn_move a, #project .btn_move button, #project .btn_move a {
+    cursor: url(../images/cursor_yellow.cur), auto;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Roboto Mono";
+    font-weight: 500;
+    width: 7.8125vw;
+    height: 2.6041666667vw;
+    line-height: 2.6041666667vw; }
+
 .db {
   display: block; }
 
@@ -240,5 +287,34 @@ body {
   grid-template-columns: repeat(3, 20.8333333333vw);
   grid-template-rows: repeat(3, 14.5833333333vw);
   grid-gap: 2.0833333333vw; }
+
+.go_right {
+  left: 0;
+  opacity: 1; }
+
+.go_invisible_left {
+  left: 50%;
+  opacity: 0; }
+
+.go_invisible_right {
+  left: -50%;
+  opacity: 0; }
+
+.time {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 2.6041666667vw;
+  left: 20.8333333333vw;
+  z-index: 300; }
+  .time .tb {
+    text-align: left;
+    width: 5.2083333333vw;
+    height: 1.5625vw;
+    line-height: 1.5625vw;
+    font-family: "Roboto Mono"; }
+  .time .tb:hover {
+    text-decoration: underline;
+    font-weight: 500; }
 
 /*# sourceMappingURL=common.css.map */
