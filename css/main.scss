@@ -2,6 +2,9 @@
 @import "_mixin";
 @import "_var";
 @import "_function";
+#follow{
+  position:absolute;z-index: 1000;
+}
 #loading{
   width:100%; height:100%; background: rgb(240, 240, 240); color: rgb(100, 100, 100);
   z-index: 900; position:fixed; top:0; left:0;
@@ -32,7 +35,6 @@
         .swiper-pagination-bullet{
           position: relative;
           width:vw-calc1920(120); height:vw-calc1920(25); line-height: vw-calc1920(20); padding-top:vw-calc1920(2);
-          cursor:url(../images/cursor_yellow.cur),auto;
           border-radius:0;  background:none;
           font-family: $fontRobo; font-weight: 400; font-size: vw-calc1920(20);
           &::after{
@@ -51,7 +53,7 @@
     }
     .swiper-scrollbar-drag{
       width:90%;  height:vw-calc1920(8); top:0;  border-radius:0; background: rgb(31, 31, 31);
-      cursor: url(../images/cursor_yellow.cur),auto;
+      cursor:pointer;
     }
   }
   .swiper-slide {
@@ -173,7 +175,7 @@
     width: vw-calc1920(1300); height: vw-calc1920(610);
   .pr_list{position:absolute; top:vw-calc1920(-15);left:vw-calc1920(-250); display: flex; flex-direction: column;}
   .pr_list li{
-    display:inline-block; width:vw-calc1920(150); height:vw-calc1920(50); line-height: vw-calc1920(50); text-align: right; cursor:url(../images/cursor_yellow.cur),auto; box-sizing: border-box;   font-family: $fontRobo; font-size: vw-calc1920(20); font-weight: 500; color:rgba(8, 8, 8, 0.295);
+    display:inline-block; width:vw-calc1920(150); height:vw-calc1920(50); line-height: vw-calc1920(50); text-align: right; cursor:pointer; box-sizing: border-box;   font-family: $fontRobo; font-size: vw-calc1920(20); font-weight: 500; color:rgba(8, 8, 8, 0.295);
   }
   .pr_list li.active,.tabpanel{color:rgb(37, 37, 37);}
   .tabpanel{display:none;}
@@ -329,7 +331,7 @@
         #portfolio_box3{
         // >div:nth-child(odd){background: blue;}
         //>div:nth-child(even){background: red;}
-        .pb{cursor:url(../images/cursor_yellow.cur),auto;}
+        .pb{cursor:pointer;}
         .pb1,.pb2,.pb3,.pb4,.pb5,.pb6{
           @include bgsize(cover);
           background: url(../images/laon_main.jpg)no-repeat center;

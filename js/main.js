@@ -24,6 +24,24 @@ document.querySelector('.clock').innerHTML=current;
 }
 //dom 불러오기
 $(document).ready(function(){
+   //마우스 따라다니는 애
+   $('body').on('mousemove',function(e){
+     var mouseX=e.pageX;
+     var mouseY=e.pageY;
+     gsap.to('#follow',{left:mouseX + 30, top:mouseY + 20,duration:0.3,delay:0.1});
+   });
+   //.pr_list li  .swiper-scrollbar-drag  #portfolio_box3 .pb input button
+   $('.pr_list li ,.swiper-scrollbar-drag , #portfolio_box3 .pb, input, button,.swiper-pagination-bullet,#logo,.skill_image ').on({
+      'mouseenter':function(){
+            $('#follow img').attr('src','../images/cursor_yellow.png');
+      },
+      'mouseleave':function(){
+         $('#follow img').attr('src','../images/cursor_black.png');
+         if (h2>=18 && h2<=19)  $('#follow img').attr('src','../images/cursor_white.png');
+         if (h2>19 && h2<=23)  $('#follow img').attr('src','../images/cursor_white.png');
+         if ((h2>=0&&h2<5))  $('#follow img').attr('src','../images/cursor_white.png');
+      }
+   });
    //커서 변환 다크모드시
   //loading 페이지
   var _page =$('#loading');
@@ -95,7 +113,9 @@ $(document).ready(function(){
        wrap.addClass('evening');
        $('body,.line,.line2,.skill_image,#loading,.swiper-container, #portfolio_Tab,.clock').addClass('white');
        $('#logo img').attr('src','../images/white/white_logo.svg');
-       $('body,html').css('cursor','url(../images/cursor_white.cur),auto');
+
+       //커서
+       $('#follow img').attr('src','../images/cursor_white.png');
 
        //txtcircle
        $('#cnt2 .txtcircle img').attr('src','../images/circle2_white.svg');
@@ -124,11 +144,13 @@ $(document).ready(function(){
     if (h2>19 && h2<=23) {
        //배경 제어
        wrap.addClass('night');
-       $('body,html').css('cursor','url(../images/cursor_white.cur),auto');
 
        //폰트 색깔 배경 제어
        $('body,.line,.line2,.skill_image,#loading,.swiper-container, #portfolio_Tab,.clock').addClass('white');
        $('#logo img').attr('src','../images/white/white_logo.svg');
+      
+       //커서
+      $('#follow img').attr('src','../images/cursor_white.png');
 
       //txtcircle
       $('#cnt2 .txtcircle img').attr('src','../images/circle2_white.svg');
@@ -158,11 +180,13 @@ $(document).ready(function(){
 
          //배경 제어
          wrap.addClass('night');
-         $('body,html').css('cursor','url(../images/cursor_white.cur),auto');
 
          //폰트 색깔 배경 제어
          $('body,.line,.line2,.skill_image,#loading,.swiper-container, #portfolio_Tab,.clock').addClass('white');
          $('#logo img').attr('src','../images/white/white_logo.svg');
+
+        //커서
+       $('#follow img').attr('src','../images/cursor_white.png');
          
          //txtcircle
          $('#cnt2 .txtcircle img').attr('src','../images/circle2_white.svg');
@@ -193,11 +217,20 @@ $(document).ready(function(){
    wrap.css({'background-image': 'linear-gradient(45deg,#64b3f4, #ffd89b,#bfe0f7,#ceaa7b, #ffd89b,#e4bef0)'});
     $(this).addClass('btndeco').siblings().removeClass('btndeco');
        $('body,.line,.line2,.skill_image,#loading,.swiper-container, #portfolio_Tab,.clock').removeClass('white');
+       $('#follow img').attr('src','../images/cursor_black.png');
+       
+       $('.pr_list li ,.swiper-scrollbar-drag , #portfolio_box3 .pb, input, button,.swiper-pagination-bullet,#logo,.skill_image ').on({
+         'mouseenter':function(){
+               $('#follow img').attr('src','../images/cursor_yellow.png');
+         },
+         'mouseleave':function(){
+            $('#follow img').attr('src','../images/cursor_black.png');
+         }
+      });
 
       //메인 이미지 제어
        $('.main_photo img').attr({src:'../images/morning.jpg',alt:'main_morning'});
       $('#logo img').attr('src','../images/mainlogo.svg');
-      $('body,html').css('cursor','url(../images/cursor_black.cur),auto');
 
       //txtcircle
       $('#cnt2 .txtcircle img').attr('src','../images/CIRCLE2.svg');
@@ -224,11 +257,19 @@ $(document).ready(function(){
    wrap.css({'background-image':'linear-gradient(45deg,#c2e59c,#64b3f4,#7e9bec,#64b3f4,#c2e59c,#64b3f4)'});
     $(this).addClass('btndeco').siblings().removeClass('btndeco');
        $('body,.line,.line2,.skill_image,#loading,.swiper-container, #portfolio_Tab,.clock').removeClass('white');
+       $('#follow img').attr('src','../images/cursor_black.png');
+       $('.pr_list li ,.swiper-scrollbar-drag , #portfolio_box3 .pb, input, button,.swiper-pagination-bullet,#logo,.skill_image ').on({
+         'mouseenter':function(){
+               $('#follow img').attr('src','../images/cursor_yellow.png');
+         },
+         'mouseleave':function(){
+            $('#follow img').attr('src','../images/cursor_black.png');
+         }
+      });
 
       //메인 사진 제어
       $('.main_photo img').attr({src:'../images/day.jpg',alt:'main_day'});
       $('#logo img').attr('src','../images/mainlogo.svg');
-      $('body,html').css('cursor','url(../images/cursor_black.cur),auto');
 
       //txtcircle
       $('#cnt2 .txtcircle img').attr('src','../images/CIRCLE2.svg');
@@ -255,7 +296,16 @@ $(document).ready(function(){
     $(this).addClass('btndeco').siblings().removeClass('btndeco');
        $('body,.line,.line2,.skill_image,#loading,.swiper-container, #portfolio_Tab,.clock').addClass('white');
        $('#logo img').attr('src','../images/white/white_logo.svg');
-       $('body,html').css('cursor','url(../images/cursor_white.cur),auto');
+       $('#follow img').attr('src','../images/cursor_white.png');
+       
+       $('.pr_list li ,.swiper-scrollbar-drag , #portfolio_box3 .pb, input, button,.swiper-pagination-bullet,#logo,.skill_image ').on({
+         'mouseenter':function(){
+               $('#follow img').attr('src','../images/cursor_yellow.png');
+         },
+         'mouseleave':function(){
+            $('#follow img').attr('src','../images/cursor_white.png');
+         }
+      });
      
        //txtcircle
       $('#cnt2 .txtcircle img').attr('src','../images/circle2_white.svg');
@@ -286,7 +336,17 @@ $(document).ready(function(){
       //폰트 색깔 배경 제어
        $('body,.line,.line2,.skill_image,#loading,.swiper-container, #portfolio_Tab,.clock').addClass('white');
       $('#logo img').attr('src','../images/white/white_logo.svg');
-      $('body,html').css('cursor','url(../images/cursor_white.cur),auto');
+      $('#follow img').attr('src','../images/cursor_white.png');
+
+      $('.pr_list li ,.swiper-scrollbar-drag , #portfolio_box3 .pb, input, button,.swiper-pagination-bullet,#logo,.skill_image ').on({
+         'mouseenter':function(){
+               $('#follow img').attr('src','../images/cursor_yellow.png');
+         },
+         'mouseleave':function(){
+            $('#follow img').attr('src','../images/cursor_white.png');
+         }
+      });
+
 
       //txtcircle
       $('#cnt2 .txtcircle img').attr('src','../images/circle2_white.svg');
