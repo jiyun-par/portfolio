@@ -20,7 +20,7 @@ input,button{font-family: inherit; font-size: 100%; color:inherit; cursor: point
 .blind{position:absolute; width:vw-calc1920(1); height:vw-calc1920(1); overflow: hidden; border:none; margin:vw-calc1920(-1); clip:rect(vw-calc1920(1), vw-calc1920(1),vw-calc1920(1),vw-calc1920(1)); clip-path:inset(50%);}
 body{ 
   height:100%;
-  font-family: "Noto Sans Kr"; font-weight: 300; font-size: vw-calc1920(16); color:#222; word-break: keep-all; line-height: 1; overflow-y: hidden;
+  font-family: "Noto Sans Kr"; font-weight: 300; font-size: vw-calc1920(16); color:rgb(53, 53, 53); word-break: keep-all; line-height: 1; overflow-y: hidden;
  *{-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -97,15 +97,24 @@ body{
       .ch{width:vw-calc1920(45); height:vw-calc1920(20);}
      .cv{width:vw-calc1920(20); height:vw-calc1920(45); }
      .info{
-       position:absolute; top:vw-calc1920(50); right:vw-calc1920(-100); text-align: left; transition:all 0.5s; width:vw-calc1920(180); height:vw-calc1920(150);
-       padding:vw-calc1920(25); opacity: 0;
-       li{ display:inline-block; white-space: nowrap; line-height: 2; font-weight: 500; position:relative;}
-       li::before{
-        content: ""; display: block; width:100%; height:vw-calc1920(10); background-color: rgba(36,63,163, 0.295); position:absolute; bottom:vw-calc1920(3); left:0;
-       }
+       position:absolute; top:vw-calc1920(10); right:vw-calc1920(-300); text-align: left; transition:all 0.2s; width:vw-calc1920(400); height:auto;
+       padding:vw-calc1920(25); opacity: 0; word-break:break-all;
+       li{ display:inline-block; /* white-space: nowrap; */ line-height: 2; position:relative; background: rgba(233, 233, 233, 0.256);margin-bottom: vw-calc1920(10); padding:vw-calc1920(10);}
+      //  li::before{
+      //   content: ""; display: block; width: calc(100% - #{vw-calc1920(20)}); height:vw-calc1920(10); background-color: rgba(154, 163, 36, 0.295); position:absolute; bottom:vw-calc1920(20); left:vw-calc1920(10); z-index: -1; display: none;
+      //  }
     }
+    .visioninfo{
+      width:vw-calc1920(400); height:auto; top:vw-calc1920(260); left:vw-calc1920(0);
+      li{
+        width:100%;  border:none;
+        white-space: normal; padding-left:vw-calc1920(20);
+        .vi1{font-size: vw-calc1920(20);  font-family: $fontRobo; font-weight: 600;}
+        .vi2{font-size: vw-calc1920(16);}
+      }
     }
-    #works,#project{
+  }
+    .tabpanel .wbx{
       .btn_move{
         position:absolute; bottom:0; right:0;
         button,a{
@@ -124,8 +133,8 @@ body{
      grid-gap:vw-calc1920(40);
  }
  .go_right{left:0;opacity: 1} //보이게 할때 투명도 1
- .go_invisible_left{left:50%; opacity: 0;}//오른쪽으로 이동하면서 투명0 다음버튼일때
- .go_invisible_right{left:-50%; opacity: 0;}//왼쪽으로 이동하면서 투명0 이전버튼일때
+ .go_invisible_right{left:50%; opacity: 0;}//오른쪽으로 이동하면서 투명0 다음버튼일때
+ .go_invisible_left{left:-50%; opacity: 0;}//왼쪽으로 이동하면서 투명0 이전버튼일때
  .time{display:flex; flex-direction: row; position:fixed; top: vw-calc1920(50);  left:vw-calc1920(400); z-index: 300;
   .tb{
    text-align: left; width:vw-calc1920(100); height:vw-calc1920(30); line-height: vw-calc1920(30); font-family: $fontRobo;

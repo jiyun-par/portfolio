@@ -30,7 +30,7 @@
     <div class="progress_bar"></div>
     <div class="progress_txt">0%</div>
   </div>
-<div id="wrap" class="clearfix">
+<div id="wrap">
   <!-- 배경 라인 -->
   <div id="lineTop" class="line"></div>
   <div id="lineBottom" class="line"></div>
@@ -56,12 +56,17 @@
         <!-- 본문1번 -->
         <section class="swiper-slide clearfix" id="cnt1">
           <div class="name">
-            <h2>H&nbsp;0&nbsp;M&nbsp;E</h2>
+            <h2>H&nbsp;O&nbsp;M&nbsp;E</h2>
           </div>
           <p class="clock txtshadow"></p>
            <div class="main_photo">
-             <div class="black"></div>
-             <img src="" alt="main">
+             <!-- <div class="black"></div> -->
+             <img src="images/main_night.jpg" alt="main">
+             <div class="intro_message txtshadow">
+               <p class="im_1"></p>
+               <p class="im_2"></p>
+               <p class="im_3"></p>
+             </div>
            </div>
         </section>
         <!-- 본문2번 -->
@@ -77,63 +82,81 @@
                 <p>로고에 마우스를 올려보세요!</p>
               </div>
               <div class="publishing skill_image">
-                  <img src="images/html.svg" alt="html" class="html skill">
+                  <img src="images/html.svg" alt="html" class="html skill fullskill">
                   <ul class="htmlinfo info">
-                    <li>#웹접근성 준수</li>
-                    <li>#SEMANTIC</li>
+                    <li>웹접근성을 준수하며 HTML5 semantic 태그를 중심으로 마크업을 할 수 있습니다.</li>
+                    <li>#SEMANTIC TAG<br>#WEB STANDARD</li>
                   </ul>
-                <img src="images/chain_horizontal.svg" class="ch ch1">
-                <img src="images/css.svg" alt="css" class="css skill">
+                <img src="images/chain_horizontal.svg" class="ch ch1" alt=""> 
+                <img src="images/css.svg" alt="css" class="css skill fullskill">
                 <ul class="cssinfo info">
-                  <li>#ANIMATION</li>
-                  <li>#3D TRANSFORM</li>
-                  <li>#GRID FLEX</li>
+                  <li>animation과 3D transform 기능으로 동적인<br>스타일링이 가능하고, 최신 기술인 grid와 flex로<br>레이아웃 구성이 가능합니다.</li>
+                  <li>#ANIMATION #GRID FLEX<br>#3D TRANSFORM</li>
                 </ul>
-                <img src="images/chain_vertical.svg" class="cv cv1">
-                <img src="images/sass.svg" alt="sass" class="sass skill">
+                <img src="images/chain_vertical.svg" class="cv cv1" alt="" >
+                <img src="images/sass.svg" alt="sass" class="sass skill fullskill">
                 <ul class="sassinfo info">
-                  <li>#CSS Preprocessor</li>
-                  <li>#편한 유지보수</li>
+                  <li>CSS전처리기인 SASS를 자유롭게 활용 가능하여, 보다 편하고 쉬운 유지보수가 가능합니다.</li>
+                  <li>#CSS Preprocessor #편한 유지보수</li>
                 </ul>
-                <img src="images/chain_vertical.svg" class="cv cv2">
-                <img src="images/js.svg" alt="js" class="js skill">
+                <img src="images/chain_vertical.svg" class="cv cv2" alt="" >
+                <img src="images/js.svg" alt="js" class="js skill fullskill">
                 <ul class="jsinfo info">
-                  <li>#IF</li>
-                  <li>#EACH</li>
-                  <li>#FOR</li>
-                  <li>#ARRAY</li>
-                  <li>#DOM&BOM</li>
+                  <li>기본연산, If,Each,For,Array 등  JavaScript<br>기본 함수 활용이 가능 하며, Dom과 Bom 구조의 정확한 이해를 바탕으로 스크립트를 구성할 수 <br>있습니다.</li>
+                  <li>#IF #EACH  #FOR  #ARRAY #DOM&BOM</li>
                 </ul>
-                <img src="images/chain_vertical.svg" class="cv cv3">
-                <img src="images/jquery.svg" alt="jquery" class="jquery skill">
+                <img src="images/chain_vertical.svg" class="cv cv3" alt="" >
+                <img src="images/jquery.svg" alt="jquery" class="jquery skill fullskill">
                 <ul class="jqueryinfo info">
-                  <li>#동적제어</li>
-                  <li>#EVENT 함수</li>
-                  <li>#TAB BROWSING</li>
-                  <li>#FULL PAGE</li>
-                  <li>#MODAL</li>
+                  <li>JavaScript를 기반으로, HTML 속성 및 태그<br>동적제어, Event 함수(click, scroll etc) 활용이<br>자유롭고 Tab Browsing, FullPage,Slide,<br>Modal 등의 구현이 가능합니다.</li>
+                  <li>#동적제어 #EVENT 함수 #TAB BROWSING<br>#FULL PAG #SLIDE #MODAL</li>
                 </ul>
               </div>
             </div>
             <div class="sb sb2">
-              <div class="txtcircle">
+               <div class="txtcircle">
                 <img src="images/CIRCLE2.svg" alt="">
-              </div>
+              </div> 
             </div>
             <div class="sb sb3">
               <div class="skillhead">
                 <h3>VISION ROAD</h3>
                 <img src="images/skill_arrow.svg" alt="">
                 <p>FrontEnd 꿈을 위한 Study Plan</p>
+                <p class="yet">*아직 구현이 안 되는 기술입니다</p>
               </div>
               <div class="vision skill_image">
-                <img src="images/vue.svg" alt="vue" class="vue vision_skill">
+                <img src="images/vue.svg" alt="vue" class="vue vision_skill fullskill">
+                <ul  class="vueinfo visioninfo info">
+                  <li>
+                    <p class="vi vi1">STUDY PURPOSE - VUE</p>
+                    <p class="vi vi2">점진적 채택이 가능한 최신 프레임워크 VUE를 공부하여 더 정교한 작업을 하고 싶습니다.</p>
+                  </li>
+                </ul>
                 <img src="images/chain_horizontal.svg" alt="" class="ch ch2">
-                <img src="images/react.svg" alt="react" class="react vision_skill">
+                <img src="images/react.svg" alt="react" class="react vision_skill fullskill">
+                <ul  class="reactinfo visioninfo info">
+                  <li>
+                    <p class="vi vi1">STUDY PURPOSE - REACT</p>
+                    <p class="vi vi2">최근 현업에서 인기가 많아진 웹앱 개발 라이브러리 react를 공부하여  UI개발을 하고 싶습니다.</p>
+                  </li>
+                </ul>
                 <img src="images/chain_vertical.svg" alt="" class="cv cv3">
-                <img src="images/typescript.svg" alt="typecript" class="typescript vision_skill">
+                <img src="images/typescript.svg" alt="typecript" class="typescript vision_skill fullskill">
+                <ul  class="typescriptinfo visioninfo info">
+                  <li>
+                    <p class="vi vi1">STUDY PURPOSE - TYPESCRIPT</p>
+                    <p class="vi vi2">ES6를 이해하고 활용하며, static type language인 typescript를 공부하여 더 안정적이고 다양한 개발하고 싶습니다.</p>
+                  </li>
+                </ul>
                 <img src="images/chain_horizontal.svg" alt="" class="ch ch3">
-                <img src="images/angular.svg" alt="angular" class="angular vision_skill">
+                <img src="images/angular.svg" alt="angular" class="angular vision_skill fullskill">
+                <ul  class="angularinfo visioninfo info">
+                  <li>
+                    <p class="vi vi1">STUDY PURPOSE - ANGULAR</p>
+                    <p class="vi vi2">typescript가 익숙해지면 angular를 공부하여 속도가 빠르고 성능이 좋은 프로그램을 개발 하고 싶습니다.</p>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="sb sb4">
@@ -143,16 +166,16 @@
                 <p>Creative and Sensitive</p>
               </div>
               <div class="design skill_image">
-               <img src="images/photoshop.svg" alt="photoshop" class="photoshop skill_d">
+               <img src="images/photoshop.svg" alt="photoshop" class="photoshop skill_d fullskill">
                <ul class="photoshopinfo info">
-                <li>#RENUAL DESIGN</li>
-                <li>#WIRE FRAME</li>
+                <li>기존 사이트의 리뉴얼 디자인과 와이어프레임<br>레이아웃 구성이 가능합니다</li>
+                <li>#RENUAL DESIGN #WIRE FRAME</li>
               </ul>
                <img src="images/chain_horizontal.svg" alt="" class="ch ch4">
-               <img src="images/illustrator.svg" alt="illustrator" class="illustrator skill_d">
+               <img src="images/illustrator.svg" alt="illustrator" class="illustrator skill_d fullskill">
                <ul class="illustinfo info">
-                <li>#LOGO DESIGN </li>
-                <li>#SVG VECTOR</li>
+                <li>로고 디자인과 벡터 이미지 디자인으로 <br>SVG animation 구현이 가능합니다.</li>
+                <li>#LOGO DESIGN #SVG VECTOR</li>
               </ul>
               </div>
             </div>
@@ -161,20 +184,22 @@
           </div>
         </section>
         <!-- 본문3번 -->
-        <section class="swiper-slide clearfix" id="cnt3">
+        <section class="swiper-slide" id="cnt3">
           <div class="name">
             <h2>P&nbsp;O&nbsp;R&nbsp;T&nbsp;F&nbsp;O&nbsp;L&nbsp;I&nbsp;O</h2>
           </div>
           <div id="portfolio_Tab" class="tab_pr">
             <ul role="tablist" class="pr_list" aria-lable="포트폴리오">
-               <li role="tab" class="tab first" aria-controls="works" id="tab1"><h3>WORKS</h3></li> 
-               <li role="tab" class="tab" aria-controls="project" id="tab2"><h3>PROJECT</h3></li> 
-               <li role="tab" class="tab last" aria-controls="view" id="tab3"><h3>VIEW ALL</h3></li> 
+               <li role="tab" class="tab first" aria-controls="raon" id="tab1"> <h3>Raon Secure</h3></li> 
+               <li role="tab" class="tab" aria-controls="nespresso" id="tab2"><h3>Nespresso</h3></li> 
+               <li role="tab" class="tab" aria-controls="hancom" id="tab3"><h3>Hancom</h3></li>
+               <li role="tab" class="tab" aria-controls="deawoo" id="tab4"><h3>Deawoo</h3></li>
+               <li role="tab" class="tab" aria-controls="world" id="tab5"><h3>World Kimchi</h3></li>
             </ul>
-            <div role="tabpanel" class="tabpanel" aria-labeledby="tab1" id="works">
-              <div  id="portfolio_box1"class="grid_box portfolio_box work_box1">
+            <div role="tabpanel" class="tabpanel" aria-labeledby="tab1" id="raon">
+              <div  id="portfolio_box1" class="grid_box portfolio_box work_box1 wbx">
                 <div class="pb pb1">
-                  <img src="images/laonfullpage.jpg" alt="라온시큐어사이트">
+                  <img src="images/laonfullpage.jpg" alt="laon">
                 </div>
                 <div class="pb pb2">
                   <h4>#1 Raon Secure 라온시큐어</h4>
@@ -185,9 +210,9 @@
                     <li><i class="fas fa-check"></i>&nbsp;&nbsp;Swiper Slide</li>
                     <li><i class="fas fa-check"></i>&nbsp;&nbsp;Video Modal</li>
                   </ul>
-                  <div class="txtcircle">
+                   <div class="txtcircle">
                     <img src="images/CIRCLE3.svg" alt="">
-                  </div>
+                  </div> 
                 </div>
                 <div class="pb pb3">
                   <h4><i class="fas fa-user-graduate"></i>&nbsp;&nbsp;STUDY POINT</h4>
@@ -201,17 +226,31 @@
                 </div>
                 <div class="pb pb4">
                   <h4><i class="fas fa-globe"></i>&nbsp;&nbsp;웹접근성 준수 POINT</h4>
-                  <div class="worksinfo wi1">
-                         <h5>1. 반복텍스트 숨김 aria-hidden</h5>
-                         <h6>&lt;Tooltip의 제목 텍스트&gt;</h6>
+                  <div class="workinfobox">
+                      <div class="worksinfo wi1">
+                            <h5>1. 반복 내용 건너 뛰기</h5>
+                            <h6>&lt;쉬운 내비게이션&gt;</h6>
+                                <p><b>Meaning </b>:<br>네비게이션의 내용이 많은 경우, 바로 본문으로 뛰어<br>넘을 수 있도록 해야 한다.</p>
+                                <p><b>Processing Method</b>:<br>본문 가장 위 쪽에 id 값 skip을 가진 div를 넣어주고, 스타일에서 z-index:1000, left:-9999px을 주어 처리 </p>
+                      </div>
+                      <div class="worksinfo wi2">
+                            <h5>2. 반복텍스트 숨김 aria-hidden</h5>
+                            <h6>&lt;Tooltip의 제목 텍스트&gt;</h6>
                             <p><b>Meaning </b>:<br>Screen Reader에서 tooltip에 들어가는 텍스트와, 본문 제목태그로 들어가는 텍스트의 중복 읽기를 방지하기 위해 aria-hidden 속성을 추가</p>
                             <p><b>Processing Method</b>:<br>script에서 tooltip 속성에 attr('aria-hidden' ,'true')를 추가하여 제어</p>
-                  </div>
-                  <div class="worksinfo wi2">
-                         <h5>2. Modal 접근성</h5>
-                         <h6>&lt;Video가 들어간 Modal&gt;</h6>
-                            <p><b>Meaning </b>:<br>스크린리더에서 모달 이외의 모든 콘텐츠는 읽어주지 못하도록 처리</p>
-                            <p><b>Processing Method</b>:<br>현재 보여지는 모달 상세내용을 제외한 나머지 모두를<br>aria-hidden과 inert 속성으로 차단하고,<br>모달 열기 닫기 버튼 클릭시 포커스 강제 이동 제어</p>
+                                    </div>
+                      <div class="worksinfo wi3">
+                            <h5>3. Modal 접근성</h5>
+                            <h6>&lt;Video가 들어간 Modal&gt;</h6>
+                                <p><b>Meaning </b>:<br>스크린리더에서 모달 이외의 모든 콘텐츠는 읽어주지 못하도록 처리</p>
+                                <p><b>Processing Method</b>:<br>현재 보여지는 모달 상세내용을 제외한 나머지 모두를<br>aria-hidden과 inert 속성으로 차단하고,<br>모달 열기 닫기 버튼 클릭시 포커스 강제 이동 제어</p>
+                      </div>
+                      <div class="worksinfo wi4">
+                            <h5>4. CrossBrowsing</h5>
+                            <h6>&lt;SASS MIXIN&gt;</h6>
+                                <p><b>Meaning </b>:<br>CrossBrowsing을 위해 접두사가 필요한 태그에 따로 변수를 만들어 사용하였고, validator에서 모든 부분을 통과하였다</p>
+                                <p><b>Processing Method</b>:<br>SASS의 mixin을 사용하여 접두사 변수를 만들어 두고 @include로 호출하여 처리</p>
+                      </div>
                   </div>
                   <div class="right_left">
                     <button type="button" class="left"><i class="fas fa-chevron-left"></i></button>
@@ -220,23 +259,18 @@
                 </div>
                 <div class="pb pb5">
                   <div class="btn_move site">
-                    <a href="https://www.raoncorp.com/ko/main" target="_blank">Original Site</a>
-                    <a href="laon/index.html" target="_blank">Clone Site</a>
+                    <a href="laon/index.html" target="_blank">Go Making Site</a>
                   </div>
                 </div>
               </div>
-              <div class="btn_move prev_next">
-                <button type="button" class=" prev"><i class="fas fa-angle-left rl"></i>&nbsp;Prev</button>
-                <button type="button" class=" next">Next&nbsp;<i class="fas fa-angle-right rl"></i></button>
-              </div>
          </div> 
-            <div role="tabpanel" class="tabpanel" aria-labeledby="tab2" id="project">
-              <div  id="portfolio_box2"class="grid_box portfolio_box work_box1">
+            <div role="tabpanel" class="tabpanel" aria-labeledby="tab2" id="nespresso">
+              <div  id="portfolio_box2"class="grid_box portfolio_box work_box2 wbx">
                 <div class="pb pb1">
-                  <img src="images/nespresso fullpage.jpg" alt="라온시큐어사이트">
+                  <img src="images/nespressofull.jpg" alt="nespresso">
                 </div>
                 <div class="pb pb2">
-                  <h4>#1 Nespresso 네스프레소 리뉴얼</h4>
+                  <h4>#2 Nespresso 네스프레소 리뉴얼</h4>
                   <ul class="works_keyword">
                     <li><i class="fas fa-check"></i>&nbsp;&nbsp;Responsive</li>
                     <li><i class="fas fa-check"></i>&nbsp;&nbsp;vw calculate</li>
@@ -246,7 +280,7 @@
                   </ul>
                   <div class="txtcircle">
                     <img src="images/CIRCLE3.svg" alt="">
-                  </div>
+                  </div> 
                 </div>
                 <div class="pb pb3">
                   <h4><i class="far fa-lightbulb"></i>&nbsp;&nbsp;Renual Concept</h4>
@@ -263,14 +297,14 @@
                   <div class="worksinfo wi1">
                          <h5>1. 반복텍스트 숨김 aria-hidden</h5>
                          <h6>&lt;Tooltip의 제목 텍스트&gt;</h6>
-                            <p><b>Meaning </b>:<br>Screen Reader에서 tooltip에 들어가는 텍스트와, 본문 제목태그로 들어가는 텍스트의 중복 읽기를 방지하기 위해 aria-hidden 속성을 추가</p>
-                            <p><b>Processing Method</b>:<br>script에서 tooltip 속성에 attr('aria-hidden' ,'true')를 추가하여 제어</p>
+                            <p><b>Meaning </b>:<br></p>
+                            <p><b>Processing Method</b>:<br></p>
                   </div>
                   <div class="worksinfo wi2">
                          <h5>2. Modal 접근성</h5>
                          <h6>&lt;Video가 들어간 Modal&gt;</h6>
-                            <p><b>Meaning </b>:<br>스크린리더에서 모달 이외의 모든 콘텐츠는 읽어주지 못하도록 처리</p>
-                            <p><b>Processing Method</b>:<br>현재 보여지는 모달 상세내용을 제외한 나머지 모두를<br>aria-hidden과 inert 속성으로 차단하고,<br>모달 열기 닫기 버튼 클릭시 포커스 강제 이동 제어</p>
+                            <p><b>Meaning </b>:<br></p>
+                            <p><b>Processing Method</b>:<br></p>
                   </div>
                   <div class="right_left">
                     <button type="button" class="left"><i class="fas fa-chevron-left"></i></button>
@@ -279,29 +313,171 @@
                 </div>
                 <div class="pb pb5">
                   <div class="btn_move site">
-                    <a href="https://www.nespresso.com/pro/kr/ko/professional-contactus?gclid=CjwKCAiAkJKCBhAyEiwAKQBCki9QL3Hy1urtWwKMmrSXNCyGwhHC3xE_KSH6lpljyTcNV2k09_uUIRoCJGQQAvD_BwE" target="_blank">Original Site</a>
                     <a href="nespresso/nespresso_main.html" target="_blank">Renual Site</a>
                   </div>
                 </div>
               </div>
-              <div class="btn_move prev_next">
-                <button type="button" class=" prev"><i class="fas fa-angle-left rl"></i>&nbsp;Prev</button>
-                <button type="button" class=" next">Next&nbsp;<i class="fas fa-angle-right rl"></i></button>
-              </div>
             </div>
-            <div role="tabpanel" class="tabpanel" aria-labeledby="tab3" id="view">
-              <div id="portfolio_box3" class="grid_box portfolio_box">
-                <div class="pb pb1"></div>
+            <div role="tabpanel" class="tabpanel" aria-labeledby="tab3" id="hancom">
+              <div  id="portfolio_box3"class="grid_box portfolio_box work_box3 wbx">
+                <div class="pb pb1">
+                  <img src="images/hancomfullpage.jpg" alt="hancom">
+                </div>
                 <div class="pb pb2">
-                  <div class="txtcircle">
+                  <h4>#3 Hancom</h4>
+                  <ul class="works_keyword">
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Responsive</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;vw calculate</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;FullPage</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Swiper Slide</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Video Modal</li>
+                  </ul>
+                   <div class="txtcircle">
                     <img src="images/CIRCLE3.svg" alt="">
-                  </div>
+                  </div> 
                 </div>
                 <div class="pb pb3">
+                  <h4><i class="far fa-lightbulb"></i>&nbsp;&nbsp;Renual Concept</h4>
+                  <div class="study">
+                    <ul>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;fullpage 오픈소스 활용</li>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;swiper 오픈소스 활용</li>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;Modal 접근성 제어</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="pb pb4"></div>
-                <div class="pb pb5"></div>
-                <div class="pb pb6"></div>
+                <div class="pb pb4">
+                  <h4><i class="fas fa-globe"></i>&nbsp;&nbsp;웹접근성 준수 POINT</h4>
+                  <div class="worksinfo wi1">
+                         <h5>1. 반복텍스트 숨김 aria-hidden</h5>
+                         <h6>&lt;Tooltip의 제목 텍스트&gt;</h6>
+                            <p><b>Meaning </b>:<br></p>
+                            <p><b>Processing Method</b>:<br></p>
+                  </div>
+                  <div class="worksinfo wi2">
+                         <h5>2. Modal 접근성</h5>
+                         <h6>&lt;Video가 들어간 Modal&gt;</h6>
+                            <p><b>Meaning </b>:<br></p>
+                            <p><b>Processing Method</b>:<br></p>
+                  </div>
+                  <div class="right_left">
+                    <button type="button" class="left"><i class="fas fa-chevron-left"></i></button>
+                    <button type="button" class="right"><i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+                <div class="pb pb5">
+                  <div class="btn_move site">
+                    <a href="nespresso/nespresso_main.html" target="_blank">Renual Site</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tabpanel" aria-labeledby="tab4" id="deawoo">
+              <div  id="portfolio_box4"class="grid_box portfolio_box work_box4 wbx">
+                <div class="pb pb1">
+                  <img src="images/deawoofull.jpg" alt="deawoo">
+                </div>
+                <div class="pb pb2">
+                  <h4>#4 Deawoo 대우건설</h4>
+                  <ul class="works_keyword">
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Responsive</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;vw calculate</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;FullPage</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Swiper Slide</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Video Modal</li>
+                  </ul>
+                  <!-- <div class="txtcircle">
+                    <img src="images/CIRCLE3.svg" alt="">
+                  </div> -->
+                </div>
+                <div class="pb pb3">
+                  <h4><i class="far fa-lightbulb"></i>&nbsp;&nbsp;Renual Concept</h4>
+                  <div class="study">
+                    <ul>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;fullpage 오픈소스 활용</li>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;swiper 오픈소스 활용</li>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;Modal 접근성 제어</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="pb pb4">
+                  <h4><i class="fas fa-globe"></i>&nbsp;&nbsp;웹접근성 준수 POINT</h4>
+                  <div class="worksinfo wi1">
+                         <h5>1. 반복텍스트 숨김 aria-hidden</h5>
+                         <h6>&lt;Tooltip의 제목 텍스트&gt;</h6>
+                            <p><b>Meaning </b>:<br></p>
+                            <p><b>Processing Method</b>:<br></p>
+                  </div>
+                  <div class="worksinfo wi2">
+                         <h5>2. Modal 접근성</h5>
+                         <h6>&lt;Video가 들어간 Modal&gt;</h6>
+                            <p><b>Meaning </b>:<br></p>
+                            <p><b>Processing Method</b>:<br></p>
+                  </div>
+                  <div class="right_left">
+                    <button type="button" class="left"><i class="fas fa-chevron-left"></i></button>
+                    <button type="button" class="right"><i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+                <div class="pb pb5">
+                  <div class="btn_move site">
+                    <a href="nespresso/nespresso_main.html" target="_blank">Renual Site</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tabpanel" aria-labeledby="tab5" id="world">
+              <div  id="portfolio_box5"class="grid_box portfolio_box work_box5 wbx">
+                <div class="pb pb1">
+                  <img src="images/kimchifull.jpg" alt="Kimchi">
+                </div>
+                <div class="pb pb2">
+                  <h4>#5 World institue of Kimchi 세계김치연구소</h4>
+                  <ul class="works_keyword">
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Responsive</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;vw calculate</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;FullPage</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Swiper Slide</li>
+                    <li><i class="fas fa-check"></i>&nbsp;&nbsp;Video Modal</li>
+                  </ul>
+                  <div class="txtcircle">
+                    <img src="images/CIRCLE3.svg" alt="">
+                  </div> 
+                </div>
+                <div class="pb pb3">
+                  <h4><i class="far fa-lightbulb"></i>&nbsp;&nbsp;Renual Concept</h4>
+                  <div class="study">
+                    <ul>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;fullpage 오픈소스 활용</li>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;swiper 오픈소스 활용</li>
+                      <li><i class="fas fa-edit"></i>&nbsp;&nbsp;Modal 접근성 제어</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="pb pb4">
+                  <h4><i class="fas fa-globe"></i>&nbsp;&nbsp;웹접근성 준수 POINT</h4>
+                  <div class="worksinfo wi1">
+                         <h5>1. 반복텍스트 숨김 aria-hidden</h5>
+                         <h6>&lt;Tooltip의 제목 텍스트&gt;</h6>
+                            <p><b>Meaning </b>:<br></p>
+                            <p><b>Processing Method</b>:<br></p>
+                  </div>
+                  <div class="worksinfo wi2">
+                         <h5>2. Modal 접근성</h5>
+                         <h6>&lt;Video가 들어간 Modal&gt;</h6>
+                            <p><b>Meaning </b>:<br></p>
+                            <p><b>Processing Method</b>:<br></p>
+                  </div>
+                  <div class="right_left">
+                    <button type="button" class="left"><i class="fas fa-chevron-left"></i></button>
+                    <button type="button" class="right"><i class="fas fa-chevron-right"></i></button>
+                  </div>
+                </div>
+                <div class="pb pb5">
+                  <div class="btn_move site">
+                    <a href="nespresso/nespresso_main.html" target="_blank">Renual Site</a>
+                  </div>
+                </div>
               </div>
             </div>
         </div>

@@ -18,6 +18,8 @@
   background: #ffffff31; }
 #wrap #cnt1 .clock.white {
   color: #ffffff; }
+#wrap #cnt1 .intro_message.white p {
+  color: #e7e7e7; }
 #wrap #cnt3 .txtcircle {
   right: -5.7291666667vw; }
 #wrap #cnt3 #portfolio_Tab.white .pr_list li {
